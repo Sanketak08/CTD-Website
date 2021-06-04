@@ -62,6 +62,7 @@ const RegisterLogin1 = () => {
 
   const loginButton = (e) => {
     let parent = e.target.parentNode.parentNode;
+    // eslint-disable-next-line array-callback-return
     Array.from(e.target.parentNode.parentNode.classList).find((element) => {
       if (element !== "slide-up") {
         parent.classList.add("slide-up");

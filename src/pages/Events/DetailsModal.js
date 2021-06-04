@@ -11,10 +11,10 @@ const DetailsModal = (props) => {
       <Container fluid>
         <Row>
           <Col lg={3} sm={3}>
-            <img src={props.logo} />
+            <img alt="Event Logo" src={props.logo} />
           </Col>
           <Col lg={9} sm={9}>
-            <h5 className='mt-5'>
+            <h5 className="mt-5">
               Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
               dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
               ac consectetur ac, vestibulum at eros.

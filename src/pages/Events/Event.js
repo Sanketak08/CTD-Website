@@ -29,7 +29,7 @@ const Event = (props) => {
       <Container fluid>
         <Row>
           <Col lg={4} sm={12}>
-            <img src={props.icon} />
+            <img alt="Event Logo" src={props.icon} />
             <h4>{props.eventName}</h4>
           </Col>
           <Col lg={6} sm={12}>
