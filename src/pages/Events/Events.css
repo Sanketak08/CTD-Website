@@ -1,0 +1,59 @@
+.event {
+  margin: 4.5% auto;
+  width: 80%;
+  font-size: 120%;
+  color: white;
+}
+
+.event Button {
+  margin: 1% 8% 4% 0;
+}
+
+.event img {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+
+.event h4 {
+  margin-top: 6%;
+  text-align: center;
+}
+
+.event p {
+  text-align: left;
+}
+
+
+@media screen and (max-width:760px) {
+  .event {
+    width: 95%;
+    font-size: 150%;
+    margin: 8% auto;
+  }
+
+  .event img {
+    /* display: inline-block; */
+    margin-bottom: 2%;
+  }
+  
+  .event button{
+    width:65%;
+    /* margin: auto; */
+    margin:3% auto;
+    display:block;
+  }
+
+  .event h4 {
+    display: none;
+    text-align: left;
+  }
+
+  .event p {
+    display: none;
+  }
+
+}

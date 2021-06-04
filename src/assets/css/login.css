@@ -1,0 +1,101 @@
+.input-field {
+  height: 50px;
+  width: 300px;
+  padding-left: 20px;
+  border-radius: 50px;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.signin-btn {
+  width: 100%;
+  border-radius: 50px !important;
+}
+
+/* signIn container */
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+/* signUp container */
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+  overflow: auto;
+}
+
+/* signUp container */
+.sign-up-container input:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* Move signin to right */
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+/* move overlay to left */
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+/* Bring Sign Up over sign in */
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 10;
+}
+
+/* Move overlay back to right */
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+/* .container {
+  background: black;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+} */
+
+.form-container {
+  position: absolute;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.register-now {
+  display: none;
+}
+
+button .ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+#signup-btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#signin-btn {
+  margin-top: 60px;
+}
