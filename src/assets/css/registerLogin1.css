@@ -2,11 +2,11 @@
 
 .body-form {
   position: relative;
-  min-height: 80vh;
-  background-color: #000;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
   /* font-family: "Fira Sans", Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,10 +16,11 @@
   /* border-radius: 15px; */
   /* height: 550px;
   width: 350px; */
-  height: 700px;
+  height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
+
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   /* background-image: url("../img/bg-3.jpg"); */
@@ -30,7 +31,6 @@
   /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
 
   /* background: #301b3f; */
-  background: #1d1f20;
 
   background-size: 400% 400%;
   /* background: linear-gradient(to right, #141e30, #243b55); */
@@ -52,6 +52,19 @@
 }
 .form-structor .signup {
   position: absolute;
+
+  /* background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px; */
+  background: rgba(0, 0, 0, 0.523);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.308);
+  padding: 30px;
+
   top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -119,7 +132,7 @@
 }
 .form-structor .signup .submit-btn {
   /* background-color: rgba(0, 0, 0, 0.4); */
-  background-color: #560a86;
+  background-color: #29a19c;
   color: rgb(256, 256, 256);
   border: 0;
   border-radius: 15px;
@@ -136,7 +149,7 @@
 }
 .form-structor .signup .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #155e5b;
 }
 .form-structor .login {
   position: absolute;

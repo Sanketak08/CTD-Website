@@ -29,16 +29,9 @@ const NavigationBar = () => {
           <Link className="na-link" to="ContactUs">
             Contact
           </Link>
-        </Nav>
-
-        <Nav className="ml-auto ">
-          <Link className="login-signup" to="/login">
+          <Link className="na-link" to="/login">
             Login
           </Link>
-          &nbsp;&nbsp; &nbsp;&nbsp;
-          {/* <Link className="login-signup" to="/login">
-              Signup
-            </Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

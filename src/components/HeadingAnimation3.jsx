@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../assets/css/Home.css";
 import "../assets/css/headingAnimation.css";
 import "../assets/css/headingAnimation3.css";
 const HeadingAnimation3 = () => {

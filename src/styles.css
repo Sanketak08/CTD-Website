@@ -7,7 +7,7 @@
   /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
   /* background: #0c0032; */
   /* background: linear-gradient(to right, #0c0032, #120149, #13014e); */
-  background: black;
+  background: transparent;
 
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -126,7 +126,8 @@ body {
 
 .google-maps {
   border: 1px solid #dcdcdc;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  filter: invert(90%);
 }
 @media only screen and (max-width: 2560px) {
   .carousel-body {

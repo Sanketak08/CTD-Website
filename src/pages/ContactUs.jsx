@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "../styles.css";
-import ContactCard from "../components/ContactCard";
+import ContactCard1 from "../components/ContactCard1";
 const ContactUs = () => {
   return (
     <div className="body-ContactUs py-5">
@@ -12,21 +12,21 @@ const ContactUs = () => {
         </Row> */}
         <Row className="d-flex justify-content-center">
           <Col className="mt-3 d-flex justify-content-center">
-            <ContactCard
+            <ContactCard1
               name="John Green"
               number="+91 7651123428"
               link1="johngreen@gmail.com"
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
-            <ContactCard
+            <ContactCard1
               name="Alan Becker"
               number="+91 9876653213"
               link1="abecker@gmail.com"
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
-            <ContactCard
+            <ContactCard1
               name="David Wallace"
               number="+91 83133337421"
               link1="david@dm.com"

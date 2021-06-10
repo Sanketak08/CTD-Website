@@ -14,8 +14,10 @@
   position: relative;
 }
 
-.font-size {
+.footer-text {
   font-size: 20.8px;
+  margin-bottom: 0;
+  font-family: "Inconsolata", monospace;
 }
 
 .footer .web-team-link a::before {
