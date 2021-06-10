@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Navbar from "./pages/Navbar/NavigationBar";
 import Profile from "./pages/Profile";
 import ContactUs from "./pages/ContactUs";
@@ -9,7 +8,6 @@ import Webteam from "./pages/WebTeam/WebTeam";
 import Events from "./pages/Events/Events";
 import "./styles.css";
 import RegisterLogin1 from "./components/RegisterLogin1";
-import PrivateRoute from "./components/utils/PrivateRoute";
 import PublicRoute from "./components/utils/PublicRoute";
 import Home1 from "./pages/Home1";
 import "./assets/css/Home1.css";

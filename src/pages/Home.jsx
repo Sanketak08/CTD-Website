@@ -1,7 +1,6 @@
 import React from "react";
 import "../assets/css/Home.css";
 import Particles from "react-particles-js";
-import brain from "../assets/img/brain.svg";
 import HeadingAnimation3 from "../components/HeadingAnimation3";
 const Home = () => {
   return (

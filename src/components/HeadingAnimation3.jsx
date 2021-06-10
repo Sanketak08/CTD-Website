@@ -10,13 +10,7 @@ const HeadingAnimation3 = () => {
     }, 4000);
     // window.addEventListener('scroll', handleScroll);
   }, []);
-  const handleScroll = (e) => {
-    if (e.target.scrollingElement.scrollTop >= 30) {
-      setHidden(false);
-    } else {
-      setHidden(true);
-    }
-  };
+
   return (
     <div className="heading-body">
       <ul className={hidden ? "text hidden" : "text"}>
