@@ -1,6 +1,8 @@
 .nav-bar {
-  background-color: #000;
+  background-color: transparent;
+  padding: 3% 2% 2%;
   font-family: "Inconsolata", monospace;
+  font-size: 14px !important;
 }
 
 .nav-bar .m-auto a {
@@ -21,7 +23,7 @@
 .nav-bar .ml-auto .login-signup {
   font-size: 150%;
   text-decoration: none;
-  color: #26f600;
+  color: white;
   margin-left: 1%;
 }
 
@@ -30,7 +32,7 @@
 }
 
 .nav-bar .m-auto a {
-  background: linear-gradient(to top, rgb(218, 218, 218) 50%, #000 50%);
+  background: linear-gradient(to top, rgb(218, 218, 218) 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: top left;
   transition: all 0.5s ease-out;

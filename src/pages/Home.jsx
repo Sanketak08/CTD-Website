@@ -1,12 +1,13 @@
 import React from "react";
 import "../assets/css/Home.css";
 import Particles from "react-particles-js";
+import brain from "../assets/img/brain.svg";
 import HeadingAnimation3 from "../components/HeadingAnimation3";
 const Home = () => {
   return (
-    <div>
+    <div className="body-home">
       <div className="scale-in-center" id="welcome">
-        {/* <img className='home-img' src={brain} alt='brain' /> */}
+        {/* <img className="home-img" src={brain} alt="brain" /> */}
         {/* <HeadingAnimation /> */}
         {/* <HeadingAnimation2 /> */}
         <HeadingAnimation3 />

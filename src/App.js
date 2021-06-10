@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./pages/Navbar/NavigationBar";
 import Profile from "./pages/Profile";
@@ -9,14 +9,17 @@ import Webteam from "./pages/WebTeam/WebTeam";
 import Events from "./pages/Events/Events";
 import "./styles.css";
 import RegisterLogin1 from "./components/RegisterLogin1";
+import PrivateRoute from "./components/utils/PrivateRoute";
 import PublicRoute from "./components/utils/PublicRoute";
+import Home1 from "./pages/Home1";
+import "./assets/css/Home1.css";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <PublicRoute exact path="/" component={Home} />
+        <PublicRoute exact path="/" component={Home1} />
         <PublicRoute exact path="/login" component={RegisterLogin1} />
         <PublicRoute exact path="/register" component={RegisterLogin1} />
         <PublicRoute path="/my-profile" component={Profile} />
