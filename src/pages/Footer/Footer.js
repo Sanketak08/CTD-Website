@@ -8,10 +8,10 @@ const Footer = () => {
       <Container fluid>
         <Row>
           <Col lg={4} md={12} sm={12}>
-            <p>© PICT IEEE Student Branch</p>
+            <p className="font-size">© PICT IEEE Student Branch</p>
           </Col>
           <Col lg={4} md={12} sm={12}>
-            <p className="web-team-link">
+            <p className="web-team-link font-size">
               Developed with ♥ by PISB &nbsp; <Link to="/team">Web Team</Link>
             </p>
           </Col>

@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.font-size {
+  font-size: 20.8px;
+}
+
 .footer .web-team-link a::before {
   content: "";
   position: absolute;
