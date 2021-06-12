@@ -4,6 +4,10 @@
   font-size: 14px !important;
 }
 
+.active {
+  background-color: #000;
+}
+
 .nav-bar .m-auto a {
   text-decoration: none;
   color: white !important;
