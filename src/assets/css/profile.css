@@ -4,11 +4,11 @@
 
 .pr-container {
   /* background-color: whitesmoke; */
-  background: #0f0c29;
+  /* background: #0f0c29; */
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
 
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
