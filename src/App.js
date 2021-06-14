@@ -3,6 +3,7 @@ import Navbar from "./pages/Navbar/NavigationBar";
 import Profile from "./pages/Profile";
 import ContactUs from "./pages/ContactUs";
 import AboutUs1 from "./pages/AboutUs1";
+import AboutUs3 from "./pages/AbooutUs3";
 import Footer from "./pages/Footer/Footer";
 import Webteam from "./pages/WebTeam/WebTeam";
 import Events from "./pages/Events/Events";
