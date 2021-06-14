@@ -48,6 +48,9 @@ const NavigationBar = () => {
           <Link className="na-link" to="ContactUs">
             Contact
           </Link>
+          <Link className="na-link" to="my-profile">
+            Profile
+          </Link>
           <Link className="na-link" to="/login">
             Login
           </Link>
