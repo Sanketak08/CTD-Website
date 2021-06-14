@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "../assets/css/profile.css";
 import EventCard from "../components/EventCard";
