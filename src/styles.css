@@ -1,4 +1,4 @@
-.body-ContactUs {
+.aboutUs {
   /* background-color: whitesmoke; */
   /* background: #0f0c29; */
   /* fallback for old browsers */
@@ -8,10 +8,14 @@
   /* background: #0c0032; */
   /* background: linear-gradient(to right, #0c0032, #120149, #13014e); */
   background: transparent;
-
-  background-size: 400% 400%;
+  color: white;
+  padding-bottom: 0px;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  height: 120vh !important;
+  /* background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  color: #fff;
+  color: rgb(255, 255, 255); */
 }
 body {
   /* background: #0f0c29;
@@ -111,9 +115,9 @@ body {
 }
 .carousel-text {
   background-color: inherit;
-  padding: 20px;
+  /* padding: 20px;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 30px; */
 }
 .carousel-caption {
   /* top: 30% !important; */
@@ -131,7 +135,7 @@ body {
 }
 @media only screen and (max-width: 2560px) {
   .carousel-body {
-    height: 300px;
+    height: 500px;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -157,13 +161,13 @@ body {
     /* overflow-y: scroll; */
     width: 80%;
     margin: 0px;
-    padding: 20px;
     overflow: hidden;
   }
   .carousel-text-inner {
     overflow: scroll;
     height: 100%;
     width: 100%;
+    /* padding: 2.5rem; */
   }
   .carousel-text-inner::-webkit-scrollbar {
     width: 0px;

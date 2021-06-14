@@ -1,11 +1,41 @@
 .gradient-border {
   --borderWidth: 3px;
-  background: #1d1f20;
+  /* background: #1d1f20; */
+  /* background: url("../img/IEEE-bg1.jpeg"); */
   position: relative;
   border-radius: var(--borderWidth);
 }
+/* .gradient-border:nth-child(1) {
+  background: url("../img/IEEE-bg1.jpeg");
+} */
+.row-inner {
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  height: 100%;
+}
+#IEEE {
+  /* background: url("../img/IEEE-bg-2.jpg"); */
+  background: url("../img/IEEE-logo-1.jpg");
+  height: 500px;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#PISB {
+  background: url("../img/PISB-bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+#PING {
+  background: url("../img/ping1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
 .gradient-border:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
