@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Carousel, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "../styles.css";
 import "../assets/css/carouselAnimation1.css";
 import IEEE_logo from "../assets/img/IEEE-logo.png";
-import PISB_logo from "../assets/img/PISB-logo1.jpg";
-import PING_logo from "../assets/img/ping1.png";
+// import PISB_logo from "../assets/img/PISB-logo1.jpg";
+// import PING_logo from "../assets/img/ping1.png";
 import { useRef } from "react";
 
 const AboutUs1 = () => {
