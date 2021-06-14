@@ -35,7 +35,9 @@ const ContactUs = () => {
         </Row>
       </Container>
       <Row>
-        <Col style={{ height: "500px", backgroundColor: "inherit" }}>
+        <Col
+          style={{ height: "500px", backgroundColor: "inherit", padding: "0" }}
+        >
           <iframe
             title="googleMapsApi"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5761897254206!2d73.84864491471969!3d18.457542087445745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1604491302435!5m2!1sen!2sin"

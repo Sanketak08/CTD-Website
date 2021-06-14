@@ -19,19 +19,18 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-image: radial-gradient(
+  background: rgb(37, 217, 209);
+  background: radial-gradient(
     circle,
-    #5b8cd7,
-    #4b75b7,
-    #3c6098,
-    #2d4b7a,
-    #1e375e
+    rgba(37, 217, 209, 1) 0%,
+    rgba(41, 120, 117, 1) 100%
   );
   position: relative;
 }
 
 .initials {
   font-size: 80px;
+  color: #000;
   position: absolute;
   top: 50%;
   left: 50%;
