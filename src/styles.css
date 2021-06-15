@@ -190,10 +190,6 @@ body {
   .initials {
     font-size: 60px;
   }
-
-  .heading-res {
-    font-size: 10px;
-  }
   .margin-res:not(last-child) {
     margin-bottom: 50px;
   }
