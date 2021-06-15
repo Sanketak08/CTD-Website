@@ -156,74 +156,80 @@ const RegisterLogin1 = () => {
           >
             <span>or</span>Sign up
           </h2>
-          <div className="form-holder">
-            <input
-              type="text"
-              className="input m-2"
-              name="username"
-              id="username"
-              placeholder="Username"
-              onChange={handleRegisterChange}
-            />
-            <input
-              type="text"
-              className="input m-2"
-              name="first_name"
-              id="first_name"
-              placeholder="First Name"
-              onChange={handleRegisterChange}
-            />
-            <input
-              type="text"
-              className="input m-2"
-              name="last_name"
-              id="last_name"
-              placeholder="Last Name"
-              onChange={handleRegisterChange}
-            />
-            <input
-              type="email"
-              className="input m-2"
-              name="email"
-              id="email"
-              placeholder="Email"
-              onChange={handleProfileChange}
-            />
-            <input
-              type="text"
-              className="input m-2"
-              name="phone_no"
-              id="phone_no"
-              placeholder="Contact"
-              onChange={handleProfileChange}
-            />
-            <input
-              type="text"
-              className="input m-2"
-              name="reg_no"
-              id="reg_no"
-              placeholder="MIS ID (C2K1234567)"
-              onChange={handleProfileChange}
-            />
-            <input
-              type="text"
-              className="input m-2"
-              name=""
-              placeholder="Category (Junior or Senior)"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              className="input m-2"
-              placeholder="Password"
-              onChange={handleRegisterChange}
-            />
-            <input
-              type="password"
-              className="input m-2"
-              placeholder="Confirm Password"
-            />
+          <div className="d-flex justify-content-center align-items-center colDir">
+            <div className="form-holder">
+              <input
+                type="text"
+                className="input m-2"
+                name="username"
+                id="username"
+                placeholder="Username"
+                onChange={handleRegisterChange}
+              />
+              <input
+                type="text"
+                className="input m-2"
+                name="first_name"
+                id="first_name"
+                placeholder="First Name"
+                onChange={handleRegisterChange}
+              />
+              <input
+                type="text"
+                className="input m-2"
+                name="last_name"
+                id="last_name"
+                placeholder="Last Name"
+                onChange={handleRegisterChange}
+              />
+            </div>
+            <div className="form-holder">
+              <input
+                type="email"
+                className="input m-2"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onChange={handleProfileChange}
+              />
+              <input
+                type="text"
+                className="input m-2"
+                name="phone_no"
+                id="phone_no"
+                placeholder="Contact"
+                onChange={handleProfileChange}
+              />
+              <input
+                type="text"
+                className="input m-2"
+                name="reg_no"
+                id="reg_no"
+                placeholder="MIS ID (C2K1234567)"
+                onChange={handleProfileChange}
+              />
+            </div>
+            <div className="form-holder">
+              <input
+                type="text"
+                className="input m-2"
+                name=""
+                placeholder="Category (Junior or Senior)"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                className="input m-2"
+                placeholder="Password"
+                onChange={handleRegisterChange}
+              />
+              <input
+                type="password"
+                className="input m-2"
+                placeholder="Confirm Password"
+              />
+            </div>
           </div>
           <button className="submit-btn" onClick={handleRegisterSubmit}>
             Sign up
