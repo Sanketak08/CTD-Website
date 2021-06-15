@@ -152,6 +152,10 @@ body {
   .carousel-body {
     height: 720px;
   }
+  .width {
+    margin: 0 auto !important;
+    width: 300px !important;
+  }
   .carousel-caption {
     overflow: scroll;
     margin: 10px;

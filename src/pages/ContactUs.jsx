@@ -10,7 +10,11 @@ const ContactUs = () => {
           <HeadingAnimation />
           <div className='heading-aboutUs display-3 mb-5'>About Us</div>
         </Row> */}
-        <Row className="d-flex justify-content-center">
+        <Row
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="d-flex justify-content-center"
+        >
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
               name="John Green"
@@ -36,6 +40,9 @@ const ContactUs = () => {
       </Container>
       <Row>
         <Col
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
           style={{ height: "500px", backgroundColor: "inherit", padding: "0" }}
         >
           <iframe
@@ -47,7 +54,7 @@ const ContactUs = () => {
             allowFullScreen=""
             aria-hidden="false"
             tabIndex="0"
-            className="shadow-lg google-maps"
+            className="shadow-lg google-maps width"
           ></iframe>{" "}
           {/* <Image src='https://source.unsplash.com/random/700x500' fluid /> */}
         </Col>

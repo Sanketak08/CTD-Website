@@ -2,6 +2,10 @@
   flex-direction: column;
 }
 
+.rowDir {
+  flex-direction: column;
+}
+
 .pr-container {
   /* background-color: whitesmoke; */
   /* background: #0f0c29; */
@@ -65,4 +69,17 @@ eventIconWrapper,
   height: 125px !important;
   width: 125px !important;
   /* border-radius: 50%; */
+}
+
+.mtt-5 {
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .mtt-5 {
+    margin-top: 0;
+  }
+  .mt-res {
+    margin-bottom: 5rem;
+  }
 }

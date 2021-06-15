@@ -5,7 +5,12 @@ import HeadingAnimation3 from "../components/HeadingAnimation3";
 const Home = () => {
   return (
     <div className="body-home">
-      <div className="scale-in-center" id="welcome">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="scale-in-center"
+        id="welcome"
+      >
         {/* <img className="home-img" src={brain} alt="brain" /> */}
         {/* <HeadingAnimation /> */}
         {/* <HeadingAnimation2 /> */}
