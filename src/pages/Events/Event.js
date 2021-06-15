@@ -61,6 +61,23 @@ const Event = (props) => {
           </Col>
         </Row>
       </Container>
+
+      {/* <div class="container1">
+        <div class="card1">
+          <div class="imgBx">
+            <img
+              alt="Event LOGO"
+              src="https://source.unsplash.com/random/200x200"
+            />
+          </div>
+          <div class="contentBx">
+            <h3>{props.eventName}</h3>
+            <Button variant="outline-light">Details</Button>
+            <Button variant="light">Register</Button>
+            
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

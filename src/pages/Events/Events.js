@@ -15,7 +15,7 @@ const Events = () => {
       <Container fluid>
         {/* <div className='heading-aboutUs display-3 mb-5 text-center'>Events</div> */}
         <Row>
-          <Col lg={6} md={6} sm={12}>
+          <Col  lg={6} md={6} sm={12}>
             <Event
               info={nccBasicInfo}
               icon={Inquizitive}
