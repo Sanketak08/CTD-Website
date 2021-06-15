@@ -152,6 +152,10 @@ body {
   .carousel-body {
     height: 720px;
   }
+  .width {
+    margin: 0 auto !important;
+    width: 300px !important;
+  }
   .carousel-caption {
     overflow: scroll;
     margin: 10px;
@@ -185,10 +189,6 @@ body {
   }
   .initials {
     font-size: 60px;
-  }
-
-  .heading-res {
-    font-size: 10px;
   }
   .margin-res:not(last-child) {
     margin-bottom: 50px;

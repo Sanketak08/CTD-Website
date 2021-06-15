@@ -25,7 +25,11 @@ const Profile = () => {
   return (
     <div className="pr-container body-ContactUs">
       <div className="container">
-        <div style={{ paddingTop: "3vw" }}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          style={{ paddingTop: "3vw" }}
+        >
           <div className="d-flex justify-content-center align-items-center">
             <div
               className="mt-4 h1 heading-res"
@@ -43,7 +47,7 @@ const Profile = () => {
               <div className="mt-4 name h2">bd</div>
             </div>
             {/* Personal Details */}
-            <div className="col-12 col-md-6 pl-5">
+            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center rowDir">
               <PersonalDetails name="geg" icon="fa fa-envelope" />
               <PersonalDetails name="SE" icon="fa fa-graduation-cap" />
               <PersonalDetails name="erer" icon="fa fa-cubes" />
@@ -56,24 +60,31 @@ const Profile = () => {
             <div
               className="h1 heading-res"
               style={{ fontWeight: "300", lineHeight: "1.2" }}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
             >
               My Events
             </div>
           </div>
           <div className="mt-5">
-            <div className="row mb-5">
-              <div className="col-12 col-md-6 d-flex justify-content-center">
+            <div data-aos="fade-up" data-aos-duration="1000" className="row">
+              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 name="Reverse Coding" />
               </div>
-              <div className="col-12 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 name="National Coding Contest" />
               </div>
             </div>
-            <div className="row mt-5">
-              <div className="col-12 col-md-6 d-flex justify-content-center">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="row mtt-5"
+            >
+              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 name="Network treasure Hunt" />
               </div>
-              <div className="col-12 col-md-6 d-flex justify-content-center">
+              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 name="InQuizitive" />
               </div>
             </div>
