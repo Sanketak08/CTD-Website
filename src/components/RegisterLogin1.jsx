@@ -4,6 +4,7 @@ import "../assets/css/registerLogin1.css";
 import axiosInstance from "../axios";
 import axios from "axios";
 import { login } from "./utils";
+import "../assets/css/carouselAnimation.css";
 
 const RegisterLogin1 = () => {
   //   const loginBtn = document.getElementById('login');
@@ -147,7 +148,7 @@ const RegisterLogin1 = () => {
   return (
     <div className="body-form">
       <div className="form-structor">
-        <div className="signup">
+        <div className="signup border-gradient border-gradient-purple">
           <h2
             className="form-title"
             id="signup"

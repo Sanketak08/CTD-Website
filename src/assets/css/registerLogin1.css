@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
 .body-form {
   position: relative;
   min-height: 80vh;
@@ -22,20 +30,7 @@
   position: relative;
   overflow: hidden;
 
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-image: url("../img/bg-3.jpg"); */
-  /* background: linear-gradient(to right, #1d2671, #c33764); */
-  /* background: linear-gradient(to right, #000000, #e74c3c); */
-
-  /* background: linear-gradient(to right, #516395, #614385); */
-  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-
-  /* background: #301b3f; */
-
-  background-size: 400% 400%;
   /* background: linear-gradient(to right, #141e30, #243b55); */
-  animation: gradient 10s ease infinite;
 }
 .form-structor::after {
   content: "";
@@ -54,17 +49,11 @@
 .form-structor .signup {
   position: absolute;
 
-  /* background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px; */
   background: rgba(0, 0, 0, 0.523);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   border-radius: 10px;
-  padding: 30px;
-
+  padding: 10px;
   top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -72,6 +61,7 @@
   z-index: 5;
   -webkit-transition: all 0.3s ease;
 }
+
 .form-structor .signup.slide-up {
   top: 5%;
   -webkit-transform: translate(-50%, 0%);

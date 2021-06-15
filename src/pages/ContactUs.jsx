@@ -44,6 +44,7 @@ const ContactUs = () => {
           data-aos-duration="1000"
           data-aos-delay="300"
           style={{ height: "500px", backgroundColor: "inherit", padding: "0" }}
+          className="d-flex justify-content-center"
         >
           <iframe
             title="googleMapsApi"

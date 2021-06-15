@@ -1,28 +1,32 @@
 .gradient-border {
-  --borderWidth: 3px;
-  /* background: #1d1f20; */
-  /* background: url("../img/IEEE-bg1.jpeg"); */
   position: relative;
-  border-radius: var(--borderWidth);
+  background: black;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-/* .gradient-border:nth-child(1) {
-  background: url("../img/IEEE-bg1.jpeg");
-} */
+.bg-transparent {
+  background-color: transparent !important;
+}
+.gradient-box {
+  background: rgba(0, 0, 0, 1);
+}
 .row-inner {
-  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.63); /* Black background with opacity */
   height: 100%;
+  width: auto;
 }
 #IEEE {
-  /* background: url("../img/IEEE-bg-2.jpg"); */
-  background: url("../img/IEEE-logo-1.jpg");
+  background: url("../img/PISB-bg-1.jpg");
   height: 500px;
   background-size: 100% 500px;
   background-repeat: no-repeat;
   background-position: center;
 }
 #PISB {
-  background: url("../img/PISB-bg-1.jpg");
+  background: url("../img/IEEE-bg-3.jpg");
   background-size: cover;
+  background-size: 100% 500px;
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
@@ -37,10 +41,10 @@
 .gradient-border:after {
   content: "";
   position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
   background: linear-gradient(
     60deg,
     #f79533,
@@ -52,7 +56,7 @@
     #07b39b,
     #6fba82
   );
-  border-radius: calc(2 * var(--borderWidth));
+  border-radius: calc(2 * 3px);
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;

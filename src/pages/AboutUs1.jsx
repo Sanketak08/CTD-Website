@@ -6,13 +6,17 @@ import "../assets/css/carouselAnimation.css";
 const AboutUs1 = () => {
   return (
     <div className="aboutUs">
-      <Container className="mb-5">
-        <Row className="d-flex justify-content-center">
+      <Container className="">
+        <Row
+          className="d-flex justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {/* <HeadingAnimation /> */}
           <Row>
-            <h1>About Us</h1>
+            <h1>Credenz Tech Days</h1>
           </Row>
-          <Row className="d-flex justify-content-center mt-3">
+          <Row className="d-flex justify-content-center mt-5">
             <p
               className="lead text-justify"
               style={{ fontWeight: 400, width: "85%" }}
@@ -38,23 +42,28 @@ const AboutUs1 = () => {
         </Row>
       </Container>
       {/* CAROUSEL */}
-      <Row className="my-5">
-        <Container fluid style={{ backgroundColor: "inherit" }}>
+      <Row
+        className=""
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
+        <Container fluid>
           <Carousel controls={false} interval={null} style={{ height: "100%" }}>
-            <Carousel.Item>
-              <div className="carousel-body container-fluid ">
+            <Carousel.Item className="bg-transparent">
+              <div className="carousel-body container-fluid">
                 <Carousel.Caption
                   className="d-flex justify-content-center align-items-center"
                   style={{ height: "100%" }}
                 >
                   <div className="carousel-text gradient-border" id="IEEE">
                     <Row className="row-inner">
-                      <Col className="d-flex align-items-center">
+                      <Col className="d-flex align-items-center col-inner">
                         <div className="carousel-text-inner">
                           <h3 className="carousel-heading">
                             Institute of Electrical and Electronics Engineering
                           </h3>
-                          <p className="lead text-justify p-4">
+                          <p className="lead text-justify carousel-para">
                             The Institute of Electrical and Electronics
                             Engineering (IEEE) is an international organization,
                             which has been the nexus for propagating scientific
@@ -82,7 +91,7 @@ const AboutUs1 = () => {
                 </Carousel.Caption>
               </div>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="bg-transparent">
               <div className="carousel-body container-fluid">
                 <Carousel.Caption
                   className="d-flex justify-content-center align-items-center"
@@ -90,12 +99,12 @@ const AboutUs1 = () => {
                 >
                   <div className="carousel-text gradient-border" id="PISB">
                     <Row className="row-inner">
-                      <Col className="d-flex align-items-center">
+                      <Col className="d-flex align-items-center col-inner">
                         <div className="carousel-text-inner">
                           <h3 className="carousel-heading">
                             PICT IEEE Student Branch (PISB)
                           </h3>
-                          <p className="lead text-justify p-4">
+                          <p className="lead text-justify  carousel-para">
                             PISB was established in the year 1998 with the aim
                             of inculcating the sense of technical awareness
                             amongst its student members. PISB endeavers to
@@ -125,7 +134,7 @@ const AboutUs1 = () => {
                 </Carousel.Caption>
               </div>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="bg-transparent">
               <div className="carousel-body container-fluid">
                 <Carousel.Caption
                   className="d-flex justify-content-center align-items-center"
@@ -133,12 +142,12 @@ const AboutUs1 = () => {
                 >
                   <div className="carousel-text gradient-border" id="PING">
                     <Row className="row-inner">
-                      <Col className="d-flex align-items-center">
+                      <Col className="d-flex align-items-center col-inner">
                         <div className="carousel-text-inner">
                           <h3 className="carousel-heading ">
                             PICT IEEE NEWSLETTER GROUP (P.I.N.G.)
                           </h3>
-                          <p className="lead text-justify p-4">
+                          <p className="lead text-justify  carousel-para">
                             P.I.N.G. (PICT IEEE Newsletter Group) is the
                             official technical magazine of PISB. P.I.N.G. serves
                             as a platform for individuals to portray their
