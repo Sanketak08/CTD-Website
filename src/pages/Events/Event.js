@@ -39,7 +39,7 @@ const Event = (props) => {
     <div className="container1  d-flex justify-content-center mt-res">
       <div className="card1">
         <div className="imgBx">
-          <img alt={props.eventName} src={props.icon} />
+          <img alt={props.eventname} src={props.icon} />
         </div>
         <div className="contentBx">
           <h3>{props.name}</h3>
@@ -48,7 +48,7 @@ const Event = (props) => {
               Details
             </Button>
           <DetailsModal
-            eventName={props.eventName}
+            eventName={props.eventname}
             logo={props.icon}
             show={modalShow}
             onHide={() => setModalShow(false)}

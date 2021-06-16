@@ -23,7 +23,7 @@ const NavigationBar = () => {
         navbar ? "active nav-bar p1 sticky-top" : "nav-bar p1 sticky-top"
       }
       collapseOnSelect
-      expand="lg"
+      expand="xl"
     >
       <Navbar.Brand>
         <Link to="/">
