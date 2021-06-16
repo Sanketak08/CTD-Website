@@ -24,62 +24,81 @@ const Event = (props) => {
       });
   };
 
+  function flip(event) {
+    var element = event.currentTarget;
+    if (element.className === "card") {
+      if (element.style.transform == "rotateY(180deg)") {
+        element.style.transform = "rotateY(0deg)";
+      } else {
+        element.style.transform = "rotateY(180deg)";
+      }
+    }
+  }
+
   return (
-    <div className="event ">
-      <Container fluid>
-        <Row>
-          <Col lg={4} sm={12}>
-            <img alt="Event LOGO" src={props.icon} />
-            <h4>{props.eventName}</h4>
-          </Col>
-          <Col lg={6} sm={12}>
-            <p>{props.info}</p>
-            <div>
-              <Button
-                className="buttons"
-                onClick={() => setModalShow(true)}
-                variant="outline-light"
-              >
-                Details
-              </Button>
+    // <div className="event ">
+    //   <Container fluid>
+    //     <Row>
+    //       <Col lg={4} sm={12}>
+    //         <img alt="Event LOGO" src={props.icon} />
+    //         <h4>{props.eventName}</h4>
+    //       </Col>
+    //       <Col lg={6} sm={12}>
+    //         <p>{props.info}</p>
+    //         <div>
+    //           <Button
+    //             className="buttons"
+    //             onClick={() => setModalShow(true)}
+    //             variant="outline-light"
+    //           >
+    //             Details
+    //           </Button>
 
-              <DetailsModal
-                eventName={props.eventName}
-                logo={props.icon}
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
+    //           <DetailsModal
+    //             eventName={props.eventName}
+    //             logo={props.icon}
+    //             show={modalShow}
+    //             onHide={() => setModalShow(false)}
+    //           />
 
-              <Button
-                className="buttons"
-                variant="outline-light"
-                onClick={handleSubmit}
-              >
-                Register
-              </Button>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    //             Register
+    //           </Button>
+    //         </div>
+    //       </Col>
+    //     </Row>
+    //   </Container>
 
-      {/* <div class="container1">
-        <div class="card1">
-          <div class="imgBx">
-            <img
-              alt="Event LOGO"
-              src="https://source.unsplash.com/random/200x200"
-            />
+    // </div>
+    <div className="container1  d-flex justify-content-center mt-res">
+      <div className="card1">
+        <div className="imgBx">
+          <img
+            alt={props.eventName}
+            src={props.icon}
+          />
+        </div>
+        <div className="contentBx">
+          <h3>{props.name}</h3>
+          <div className="mt-3 mb-4">
+            <a alt="Button" href="!3">
+              Details
+            </a>
           </div>
-          <div class="contentBx">
-            <h3>{props.eventName}</h3>
-            <Button variant="outline-light">Details</Button>
-            <Button variant="light">Register</Button>
-            
+          <div>
+            <a alt="Button" href="!3">
+              Register
+            </a>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
 export default Event;
+
+//           <Button
+//             className="buttons"
+//             variant="outline-light"
+//             onClick={handleSubmit}
+//           >

@@ -15,7 +15,7 @@ const Events = () => {
       <Container fluid>
         {/* <div className='heading-aboutUs display-3 mb-5 text-center'>Events</div> */}
         <Row>
-          <Col  lg={6} md={6} sm={12}>
+          <Col lg={4} md={6} sm={12}>
             <Event
               info={nccBasicInfo}
               icon={Inquizitive}
@@ -23,7 +23,7 @@ const Events = () => {
               id="1"
             />
           </Col>
-          <Col>
+          <Col lg={4} md={6} sm={12}>
             <Event
               info={nccBasicInfo}
               icon={NCC}
@@ -31,17 +31,7 @@ const Events = () => {
               id="2"
             />
           </Col>
-        </Row>
-        <Row>
-          <Col lg={6} md={6} sm={12}>
-            <Event
-              info={nthBasicInfo}
-              icon={NCC}
-              eventName="NTH"
-              id="3"
-            />
-          </Col>
-          <Col>
+          <Col lg={4} md={6} sm={12}>
             <Event
               info={nthBasicInfo}
               icon={Inquizitive}
