@@ -36,39 +36,6 @@ const Event = (props) => {
   }
 
   return (
-    // <div className="event ">
-    //   <Container fluid>
-    //     <Row>
-    //       <Col lg={4} sm={12}>
-    //         <img alt="Event LOGO" src={props.icon} />
-    //         <h4>{props.eventName}</h4>
-    //       </Col>
-    //       <Col lg={6} sm={12}>
-    //         <p>{props.info}</p>
-    //         <div>
-    //           <Button
-    //             className="buttons"
-    //             onClick={() => setModalShow(true)}
-    //             variant="outline-light"
-    //           >
-    //             Details
-    //           </Button>
-
-    //           <DetailsModal
-    //             eventName={props.eventName}
-    //             logo={props.icon}
-    //             show={modalShow}
-    //             onHide={() => setModalShow(false)}
-    //           />
-
-    //             Register
-    //           </Button>
-    //         </div>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-
-    // </div>
     <div className="container1  d-flex justify-content-center mt-res">
       <div className="card1">
         <div className="imgBx">
@@ -76,11 +43,10 @@ const Event = (props) => {
         </div>
         <div className="contentBx">
           <h3>{props.name}</h3>
-          <div className="mt-3 mb-4">
-            <a onClick={() => setModalShow(true)} alt="Button" href="#">
+          
+          <Button className='mt-3 mb-3 pl-4 pr-4' onClick={() => setModalShow(true)} variant="outline-light">
               Details
-            </a>
-          </div>
+            </Button>
           <DetailsModal
             eventName={props.eventName}
             logo={props.icon}
@@ -88,9 +54,9 @@ const Event = (props) => {
             onHide={() => setModalShow(false)}
           />
           <div>
-            <a onClick={handleSubmit} alt="Button" href="#">
+            <Button variant="light" onClick={handleSubmit}>
               Register
-            </a>
+            </Button>
           </div>
         </div>
       </div>

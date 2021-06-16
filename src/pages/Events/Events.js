@@ -15,23 +15,23 @@ const Events = () => {
       <Container fluid>
         {/* <div className='heading-aboutUs display-3 mb-5 text-center'>Events</div> */}
         <Row>
-          <Col lg={4} md={6} sm={12}>
+          <Col lg={4} sm={12}>
             <Event
               info={nccBasicInfo}
               icon={Inquizitive}
-              eventName="RC"
+              eventName="Reverse Coding"
               id="1"
             />
           </Col>
-          <Col lg={4} md={6} sm={12}>
+          <Col lg={4} sm={12}>
             <Event
               info={nccBasicInfo}
               icon={NCC}
-              eventName="NCC"
+              eventName="National Coding Contest"
               id="2"
             />
           </Col>
-          <Col lg={4} md={6} sm={12}>
+          <Col lg={4} sm={12}>
             <Event
               info={nthBasicInfo}
               icon={Inquizitive}

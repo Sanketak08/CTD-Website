@@ -38,11 +38,6 @@
   width: 100%;
 }
 
-.footer .fab:hover {
-  transition: 0.3s;
-  transform: rotateZ(360deg);
-}
-
 .footer .instagram {
   color: white;
 
