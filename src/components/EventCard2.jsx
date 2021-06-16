@@ -12,6 +12,7 @@ const EventCard2 = (props) => {
           />
         </div>
         <div class="contentBx">
+          <h3>{props.name}</h3>
           <div className="mt-3 mb-4">
             <a alt="Button" href="!3">
               View
