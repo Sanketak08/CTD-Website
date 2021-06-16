@@ -42,12 +42,7 @@ const AboutUs1 = () => {
         </Row>
       </Container>
       {/* CAROUSEL */}
-      <Row
-        className=""
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="500"
-      >
+      <Row className="">
         <Container fluid>
           <Carousel controls={false} interval={null} style={{ height: "100%" }}>
             <Carousel.Item className="bg-transparent">
