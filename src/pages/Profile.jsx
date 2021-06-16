@@ -70,10 +70,10 @@ const Profile = () => {
           <div className="mt-5">
             <div data-aos="fade-up" data-aos-duration="1000" className="row">
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 name="Reverse Coding" />
+                <EventCard2 />
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 name="National Coding Contest" />
+                <EventCard2 />
               </div>
             </div>
             <div
@@ -82,10 +82,10 @@ const Profile = () => {
               className="row mtt-5"
             >
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 name="Network treasure Hunt" />
+                <EventCard2 />
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 name="InQuizitive" />
+                <EventCard2 />
               </div>
             </div>
             {/* <div className="row">

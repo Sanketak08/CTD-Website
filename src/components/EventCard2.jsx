@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/eventcard.css";
 
-const EventCard2 = (props) => {
+const EventCard2 = () => {
   return (
     <div class="container1">
       <div class="card1">
@@ -12,7 +12,6 @@ const EventCard2 = (props) => {
           />
         </div>
         <div class="contentBx">
-          <h3>{props.name}</h3>
           <div className="mt-3 mb-4">
             <a alt="Button" href="!3">
               View
