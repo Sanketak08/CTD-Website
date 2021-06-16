@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axiosInstance from "../../axios";
@@ -24,16 +24,16 @@ const Event = (props) => {
       });
   };
 
-  function flip(event) {
-    var element = event.currentTarget;
-    if (element.className === "card") {
-      if (element.style.transform == "rotateY(180deg)") {
-        element.style.transform = "rotateY(0deg)";
-      } else {
-        element.style.transform = "rotateY(180deg)";
-      }
-    }
-  }
+  //   function flip(event) {
+  //     var element = event.currentTarget;
+  //     if (element.className === "card") {
+  //       if (element.style.transform === "rotateY(180deg)") {
+  //         element.style.transform = "rotateY(0deg)";
+  //       } else {
+  //         element.style.transform = "rotateY(180deg)";
+  //       }
+  //     }
+  //   }
 
   return (
     <div className="container1  d-flex justify-content-center mt-res">
@@ -43,10 +43,14 @@ const Event = (props) => {
         </div>
         <div className="contentBx">
           <h3>{props.name}</h3>
-          
-          <Button className='mt-3 mb-3 pl-4 pr-4' onClick={() => setModalShow(true)} variant="outline-light">
-              Details
-            </Button>
+
+          <Button
+            className="mt-3 mb-3 pl-4 pr-4"
+            onClick={() => setModalShow(true)}
+            variant="outline-light"
+          >
+            Details
+          </Button>
           <DetailsModal
             eventName={props.eventname}
             logo={props.icon}

@@ -1,18 +1,18 @@
-import { Modal, Button, Container, Row, Col } from "react-bootstrap";
+import { Modal, Container, Row, Col } from "react-bootstrap";
 
 const DetailsModal = (props) => {
   return (
     <Modal
       {...props}
       size="lg"
-      className='details-modal'
+      className="details-modal"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Header closeButton>
         <h3>{props.eventname}</h3>
       </Modal.Header>
-      <Container  fluid>
+      <Container fluid>
         <Row>
           <Col lg={3} sm={3}>
             <img alt="Event LOGO" src={props.logo} />
@@ -25,7 +25,6 @@ const DetailsModal = (props) => {
             </h5>
           </Col>
         </Row>
-        
       </Container>
     </Modal>
   );
