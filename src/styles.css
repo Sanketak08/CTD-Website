@@ -31,11 +31,11 @@ body {
 }
 ::-webkit-scrollbar-track {
   width: 5px;
-  /* background-color: rgb(56, 56, 56); */
+  background-color: rgb(56, 56, 56);
 }
 ::-webkit-scrollbar-thumb {
   width: 5px;
-  /* background-color: rgb(41, 41, 41); */
+  background-color: rgb(29, 29, 29);
 }
 
 ::selection {
