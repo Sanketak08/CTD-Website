@@ -19,7 +19,7 @@ const Events = () => {
             <Event
               info={nccBasicInfo}
               icon={Inquizitive}
-              eventName="Reverse Coding"
+              eventname="Reverse Coding"
               id="1"
             />
           </Col>
@@ -27,7 +27,7 @@ const Events = () => {
             <Event
               info={nccBasicInfo}
               icon={NCC}
-              eventName="National Coding Contest"
+              eventname="National Coding Contest"
               id="2"
             />
           </Col>
@@ -35,7 +35,7 @@ const Events = () => {
             <Event
               info={nthBasicInfo}
               icon={Inquizitive}
-              eventName="Inquizitive"
+              eventname="Inquizitive"
               id="4"
             />
           </Col>

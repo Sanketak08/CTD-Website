@@ -10,7 +10,7 @@ const DetailsModal = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        <h3>{props.eventName}</h3>
+        <h3>{props.eventname}</h3>
       </Modal.Header>
       <Container fluid>
         <Row>
