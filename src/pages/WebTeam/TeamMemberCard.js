@@ -5,8 +5,8 @@ const TeamMemberCard = (props) => {
     <div className="team-member">
         <img alt="Team Member" src={props.image} />
         <h2>
-          Jay Samson <br />
-          <i className="fab fa-linkedin-in"></i>
+          {props.name} <br />
+          <a href={props.linkedin}><i className="fab fa-linkedin-in"></i></a>
         </h2>
       </div>
   );
