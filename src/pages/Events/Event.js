@@ -72,21 +72,24 @@ const Event = (props) => {
     <div className="container1  d-flex justify-content-center mt-res">
       <div className="card1">
         <div className="imgBx">
-          <img
-            alt={props.eventName}
-            src={props.icon}
-          />
+          <img alt={props.eventName} src={props.icon} />
         </div>
         <div className="contentBx">
           <h3>{props.name}</h3>
           <div className="mt-3 mb-4">
-            <a alt="Button" href="#">
-              
+            <a onClick={() => setModalShow(true)} alt="Button" href="#">
+              Details
             </a>
           </div>
+          <DetailsModal
+            eventName={props.eventName}
+            logo={props.icon}
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
           <div>
-            <a alt="Button" href="#">
-              Cancel
+            <a onClick={handleSubmit} alt="Button" href="#">
+              Register
             </a>
           </div>
         </div>
