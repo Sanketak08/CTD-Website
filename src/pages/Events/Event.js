@@ -80,12 +80,18 @@ const Event = (props) => {
         <div className="contentBx">
           <h3>{props.name}</h3>
           <div className="mt-3 mb-4">
-            <a alt="Button" href="!3">
+            <a onClick={() => setModalShow(true)} alt="Button" href="#">
               Details
             </a>
+            <DetailsModal
+                eventName={props.eventName}
+                logo={props.icon}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
           </div>
           <div>
-            <a alt="Button" href="!3">
+            <a onClick={handleSubmit} alt="Button" href="#">
               Register
             </a>
           </div>
