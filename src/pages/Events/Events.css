@@ -42,7 +42,7 @@
 .container1 .card1 .imgBx {
   position: relative;
   top: 50%;
-  left: -25%;
+  left: 0;
   transform: translateY(-50%);
   transition: 0.5s;
 }
