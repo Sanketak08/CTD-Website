@@ -6,7 +6,7 @@ import "../assets/css/carouselAnimation.css";
 const AboutUs1 = () => {
   return (
     <div className="aboutUs">
-      <Container className="">
+      <Container className="" style={{ height: "80vh" }}>
         <Row
           className="d-flex justify-content-center"
           data-aos="fade-up"

@@ -59,6 +59,7 @@ body {
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  font-family: "Inconsolata", monospace !important;
 }
 #root {
   height: 100%;

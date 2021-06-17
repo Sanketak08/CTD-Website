@@ -5,11 +5,16 @@ import ContactCard1 from "../components/ContactCard1";
 const ContactUs = () => {
   return (
     <div className="body-ContactUs py-5">
-      <Container style={{ marginBottom: "100px" }}>
+      <Container style={{ height: "90vh" }}>
         {/* <Row className='headingContactUs justify-content-center mb-5'>
           <HeadingAnimation />
           <div className='heading-aboutUs display-3 mb-5'>About Us</div>
         </Row> */}
+        <Row className="mb-5 d-flex justify-content-center">
+          <p className="h1" style={{ color: "#fff", fontWeight: 500 }}>
+            Get In Touch!
+          </p>
+        </Row>
         <Row
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -38,7 +43,7 @@ const ContactUs = () => {
           </Col>
         </Row>
       </Container>
-      <Row>
+      <Row style={{ margin: 0 }}>
         <Col
           data-aos="fade-up"
           data-aos-duration="1000"

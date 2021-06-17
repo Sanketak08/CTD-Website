@@ -79,7 +79,7 @@ const Profile = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="row mtt-5"
+              className="row mtt-5 d-flex justify-content-center"
             >
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 />
