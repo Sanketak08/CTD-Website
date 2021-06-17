@@ -17,25 +17,18 @@
   animation: gradient 10s ease infinite;
   color: rgb(255, 255, 255); */
 }
-body {
-  /* background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  cursor: default;
-  overflow-x: hidden;
-  font-family: "Inconsolata", monospace !important; */
-}
+
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
   width: 5px;
-  /* background-color: rgb(56, 56, 56); */
+  background-color: rgb(56, 56, 56);
 }
 ::-webkit-scrollbar-thumb {
   width: 5px;
-  /* background-color: rgb(41, 41, 41); */
+  background-color: rgb(29, 29, 29);
 }
 
 ::selection {
