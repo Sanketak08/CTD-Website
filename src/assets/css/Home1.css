@@ -5,47 +5,47 @@
 /* animations */
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @-moz-keyframes bg-scrolling-reverse {
   100% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @-o-keyframes bg-scrolling-reverse {
   100% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @keyframes bg-scrolling-reverse {
   100% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @-webkit-keyframes bg-scrolling {
   0% {
-    background-position: 25px 25px;
+    background-position: 40px 40px;
   }
 }
 @-moz-keyframes bg-scrolling {
   0% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @-o-keyframes bg-scrolling {
   0% {
-    background-position: 25px 25px;
+    background-position: 50px 50px;
   }
 }
 @keyframes bg-scrolling {
   0% {
-    background-position: 25px 25px;
+    background-position: top;
+    transition: ease;
   }
 }
 /* main styles */
 body {
-  /* height: 100vh; */
   color: #999;
   font: 400 10.6666666667px exo, ubuntu, "segoe ui", helvetica, arial,
     sans-serif;
@@ -60,6 +60,14 @@ body {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
   font-family: "Inconsolata", monospace !important;
+
+  /* background: linear-gradient(90deg, #161122 38px, transparent 2%) center,
+    linear-gradient(#161122 38px, transparent 2%) center, #a799cc;
+  background-size: 40px 40px;
+  transition-delay: 2s;
+  transition: ease;
+  animation: bg-scrolling 5s infinite 1s;
+  animation-timing-function: linear; */
 
   /* background-color: #000000;
   opacity: 1;

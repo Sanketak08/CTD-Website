@@ -5,7 +5,7 @@ import EventCard from "../components/EventCard";
 import PersonalDetails from "../components/PersonalDetails";
 import axiosInstance from "../axios";
 import EventCard2 from "../components/EventCard2";
-
+import TextScramble from "../components/TextScramble";
 const Profile = () => {
   const [appState, setAppState] = useState({
     loading: true,
@@ -35,7 +35,7 @@ const Profile = () => {
               className="mt-4 h1 heading-res"
               style={{ fontWeight: "300", lineHeight: "1.2" }}
             >
-              My Profile
+              <TextScramble text="My Profile" />
             </div>
           </div>
           <div className="row mt-5">
@@ -79,7 +79,7 @@ const Profile = () => {
             <div
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="row mtt-5"
+              className="row mtt-5 d-flex justify-content-center"
             >
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 />

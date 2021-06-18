@@ -3,15 +3,15 @@ import "../assets/css/eventcard.css";
 
 const EventCard2 = () => {
   return (
-    <div class="container1">
-      <div class="card1">
-        <div class="imgBx">
+    <div className="container1">
+      <div className="card1">
+        <div className="imgBx">
           <img
             alt="Event LOGO"
             src="https://source.unsplash.com/random/200x200"
           />
         </div>
-        <div class="contentBx">
+        <div className="contentBx">
           <div className="mt-3 mb-4">
             <a alt="Button" href="!3">
               View

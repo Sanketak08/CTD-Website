@@ -2,21 +2,21 @@ import React from "react";
 import "../assets/css/contactCard1.css";
 const ContactCard1 = ({ name, link, number }) => {
   return (
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="our-team">
-          <div class="picture">
+    <div className="container">
+      <div className="row d-flex justify-content-center">
+        <div className="our-team">
+          <div className="picture">
             <img
-              class="img-fluid"
+              className="img-fluid"
               src="https://source.unsplash.com/random/200x200"
               alt="sampleIMg"
             />
           </div>
-          <div class="team-content">
-            <h3 class="name">{name}</h3>
-            <h4 class="number">{number}</h4>
+          <div className="team-content">
+            <h3 className="name">{name}</h3>
+            <h4 className="number">{number}</h4>
           </div>
-          <ul class="social">
+          <ul className="social">
             <li>{/* Link here */}</li>
             <li>{/* link here */}</li>
             <li>{/* link here */}</li>
