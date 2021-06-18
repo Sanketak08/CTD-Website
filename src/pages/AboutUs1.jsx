@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Carousel, Row, Col } from "react-bootstrap";
 import "../styles.css";
 import "../assets/css/carouselAnimation.css";
+import "../assets/css/borderAnimation1.css";
 
 const AboutUs1 = () => {
   return (
     <div className="aboutUs">
-      <Container className="">
+      <Container className="" style={{ height: "80vh" }}>
         <Row
           className="d-flex justify-content-center"
           data-aos="fade-up"
@@ -18,9 +19,13 @@ const AboutUs1 = () => {
           </Row>
           <Row className="d-flex justify-content-center mt-5">
             <p
-              className="lead text-justify"
+              className="lead text-justify p-2"
               style={{ fontWeight: 400, width: "85%" }}
             >
+              {/* <div className="bar top"></div>
+              <div className="bar right delay"></div>
+              <div className="bar bottom delay"></div>
+              <div className="bar left"></div> */}
               Credenz Tech Dayz (CTD) is organized by the PICT IEEE Student
               Branch annually, in the even semester, to coincide with the IEEE
               membership drive. CTD brings with it a gusto that is portrayed in
