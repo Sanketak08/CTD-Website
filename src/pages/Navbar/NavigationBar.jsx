@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import CTDlogo from "../../assets/img/ctd.png";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 import "./Nav.css";
 
 const NavigationBar = () => {
@@ -14,6 +15,13 @@ const NavigationBar = () => {
       setNavbar(false);
     }
   };
+
+  
+
+  $( '.navbar-nav .na-link' ).on( 'click', function () {
+    $( '.navbar-nav .na-link' ).find( '.na-link.active' ).removeClass( 'active' );
+    $( this ).parent( '.na-link' ).addClass( 'active' );
+  });
 
   window.addEventListener("scroll", changeBackground);
 
@@ -41,9 +49,6 @@ const NavigationBar = () => {
           </Link>
           <Link className="na-link" to="/events">
             Events
-          </Link>
-          <Link className="na-link" to="#">
-            Sponsors
           </Link>
           <Link className="na-link" to="ContactUs">
             Contact

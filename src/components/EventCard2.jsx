@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from 'react-bootstrap'
 import "../assets/css/eventcard.css";
 
 const EventCard2 = () => {
@@ -13,15 +14,10 @@ const EventCard2 = () => {
         </div>
         <div class="contentBx">
           <div className="mt-3 mb-4">
-            <a alt="Button" href="!3">
-              View
-            </a>
+            
+            <Button variant='light'>View</Button>
           </div>
-          <div>
-            <a alt="Button" href="!3">
-              Cancel
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>
