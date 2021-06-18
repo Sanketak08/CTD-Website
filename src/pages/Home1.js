@@ -10,7 +10,10 @@ class Home1 extends React.Component {
   }
   componentDidMount() {
     this.vantaEffect = WAVES({
-      el: this.vantaRef.current
+      el: this.vantaRef.current,
+      color: 0x343434,
+  shininess: 150.00,
+  
     })
   }
   componentWillUnmount() {
