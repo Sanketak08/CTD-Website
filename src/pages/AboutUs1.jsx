@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Carousel, Row, Col } from "react-bootstrap";
 import "../styles.css";
 import "../assets/css/carouselAnimation.css";
-import "../assets/css/borderAnimation1.css";
 import TextScramble from "../components/TextScramble";
 
 const AboutUs1 = () => {

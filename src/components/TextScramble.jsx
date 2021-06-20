@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../assets/css/scrambleText.css";
 class TextScramble extends React.Component {
   constructor(props) {
     super(props);
@@ -69,7 +69,7 @@ class TextScramble extends React.Component {
   }
 
   componentDidMount() {
-    const el = document.querySelector(".text");
+    const el = document.querySelector(".text-scramble");
     const fx = new TextScramble(el);
     function next() {
       //       console.log(el.innerHTML);
@@ -80,7 +80,7 @@ class TextScramble extends React.Component {
   }
   render() {
     // eslint-disable-next-line jsx-a11y/heading-has-content
-    return <div className="text display-4">{this.props.text}</div>;
+    return <div className="text-scramble display-3">{this.props.text}</div>;
   }
 }
 

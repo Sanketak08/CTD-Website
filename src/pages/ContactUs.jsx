@@ -12,7 +12,10 @@ const ContactUs = () => {
           <div className='heading-aboutUs display-3 mb-5'>About Us</div>
         </Row> */}
         <Row className="mb-5 d-flex justify-content-center">
-          <p className="h1" style={{ color: "#fff", fontWeight: 500 }}>
+          <p
+            className="h1 heading-wrapper"
+            style={{ color: "#fff", fontWeight: 500 }}
+          >
             <TextScramble text="Contact Us" />
           </p>
         </Row>
