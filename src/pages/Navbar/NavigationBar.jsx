@@ -6,26 +6,24 @@ import "./Nav.css";
 import {isLogin} from '../../components/utils/index'
 
 const NavigationBar = () => {
-  const [navbar, setNavbar] = React.useState(false);
+  // const [navbar, setNavbar] = React.useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 40) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 40) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
 
   
 
-  window.addEventListener("scroll", changeBackground);
+  // window.addEventListener("scroll", changeBackground);
 
   if(isLogin()){
     return(
       <Navbar
-      className={
-        navbar ? "active nav-bar p1 sticky-top" : "nav-bar p1 sticky-top"
-      }
+      className="nav-bar" 
       collapseOnSelect
       expand="xl"
     >
@@ -60,9 +58,7 @@ const NavigationBar = () => {
 
     return(
       <Navbar
-      className={
-        navbar ? "active nav-bar p1 sticky-top" : "nav-bar p1 sticky-top"
-      }
+      className='nav-bar'
       collapseOnSelect
       expand="xl"
     >
