@@ -18,8 +18,7 @@ class Home1 extends React.Component {
       el: this.vantaRef.current,
       color: 0x101010,
       shininess: 150,
-      minWidth: 200.0,
-      minHeight: 750.0,
+      minHeight: 650.0,
     });
   }
   componentWillUnmount() {
@@ -32,7 +31,6 @@ class Home1 extends React.Component {
         <div className="section-home d-flex justify-content-center align-items-center ">
           <HeadingAnimation3 />
         </div>
-        {/* SECTION-ABOUTUS */}
       </div>
     );
   }

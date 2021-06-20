@@ -85,6 +85,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.home-page{
+  height: 140%;
+}
 .home-page .ctd-image {
   display: flex;
   justify-content: center;
@@ -101,3 +105,4 @@ body {
     margin: 10% 0 15%;
   }
 }
+

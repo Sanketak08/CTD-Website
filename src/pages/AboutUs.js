@@ -18,9 +18,9 @@ const AboutUs = () => {
                 {/* <h1>Credenz Tech Days</h1> */}
                 <TextScramble text={"About Us"} />
               </Row>
-              <Row className="d-flex justify-content-center mt-5">
+              <Row className="justify-content-center mt-5">
                 <p
-                  className="lead text-justify p-2 about-content"
+                  className="lead text-justify about-content"
                   style={{ fontWeight: 400, width: "85%" }}
                 >
                   Credenz Tech Dayz (CTD) is organized by the PICT IEEE Student
