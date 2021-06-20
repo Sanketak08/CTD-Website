@@ -1,5 +1,6 @@
 .section-home-about {
   flex-direction: column;
+  scrollbar-width: none;
 }
 .section-home {
   height: 90vh;
