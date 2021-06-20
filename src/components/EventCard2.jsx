@@ -3,9 +3,9 @@ import { Button } from "react-bootstrap";
 import "../assets/css/eventcard.css";
 
 const EventCard2 = () => {
-  const handleView = (e) => {
-    alert(e);
-  };
+  //   const handleView = (e) => {
+  //     alert(e);
+  //   };
   return (
     <div className="container1">
       <div className="card1">

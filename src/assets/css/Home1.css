@@ -85,3 +85,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.home-page .ctd-image {
+  display: flex;
+  justify-content: center;
+}
+
+.home-page .ctd-image img {
+  width: 500px;
+  margin: 10% 0 15%;
+}
+
+@media (max-width: 780px) {
+  .home-page .ctd-image img {
+    width: 80%;
+    margin: 10% 0 15%;
+  }
+}
