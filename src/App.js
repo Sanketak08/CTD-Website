@@ -9,15 +9,16 @@ import "./styles.css";
 import RegisterLogin1 from "./components/RegisterLogin1";
 import PublicRoute from "./components/utils/PublicRoute";
 import Home1 from "./pages/Home1";
+import AboutUs from './pages/AboutUs'
 import "./assets/css/Home1.css";
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <Switch>
         <PublicRoute exact path="/">
           <Home1 />
+          <AboutUs></AboutUs>
         </PublicRoute>
         <PublicRoute exact path="/login" component={RegisterLogin1} />
         <PublicRoute path="/my-profile" component={Profile} />
