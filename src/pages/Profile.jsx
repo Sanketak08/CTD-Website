@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "../assets/css/profile.css";
-import EventCard from "../components/EventCard";
 import PersonalDetails from "../components/PersonalDetails";
 import axiosInstance from "../axios";
 import EventCard2 from "../components/EventCard2";
@@ -12,16 +11,16 @@ const Profile = () => {
     profile: null,
   });
 
-  //   useEffect(() => {
-  //     axiosInstance.get('account_detail/').then((res) => {
-  //       const profileData = res.data;
-  //       console.log(res.data);
-  //       setAppState({ loading: false, profile: profileData });
-  //       console.log(res.data);
-  //     });
-  //   }, [setAppState]);
+  useEffect(() => {
+    axiosInstance.get("account_detail/").then((res) => {
+      const profileData = res.data;
+      console.log(res.data);
+      setAppState({ loading: false, profile: profileData });
+      console.log(res.data);
+    });
+  }, [setAppState]);
 
-  //   if(appState.loading) return <p>Loading Profile Data</p>;
+  if (appState.loading) return <p>Loading Profile Data</p>;
   return (
     <div className="pr-container body-ContactUs">
       <div className="container">
@@ -44,14 +43,23 @@ const Profile = () => {
               <div className="circle">
                 <p className="initials">JD</p>
               </div>
-              <div className="mt-4 name h2">bd</div>
+              <div className="mt-4 name h2">{appState.profile.name}</div>
             </div>
             {/* Personal Details */}
             <div className="col-12 col-md-6 d-flex justify-content-center align-items-center rowDir">
-              <PersonalDetails name="geg" icon="fa fa-envelope" />
+              <PersonalDetails
+                name={appState.profile.email}
+                icon="fa fa-envelope"
+              />
               <PersonalDetails name="SE" icon="fa fa-graduation-cap" />
-              <PersonalDetails name="erer" icon="fa fa-cubes" />
-              <PersonalDetails name="ege" icon="fa fa-phone" />
+              <PersonalDetails
+                name={appState.profile.level}
+                icon="fa fa-cubes"
+              />
+              <PersonalDetails
+                name={appState.profile.phone_no}
+                icon="fa fa-phone"
+              />
             </div>
           </div>
         </div>
@@ -70,10 +78,10 @@ const Profile = () => {
           <div className="mt-5">
             <div data-aos="fade-up" data-aos-duration="1000" className="row">
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 />
+                <EventCard2 events={appState.profile.events.RC} />
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 />
+                <EventCard2 events={appState.profile.events.NCC} />
               </div>
             </div>
             <div
@@ -82,10 +90,10 @@ const Profile = () => {
               className="row mtt-5 d-flex justify-content-center"
             >
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 />
+                <EventCard2 events={appState.profile.events.NTH} />
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 />
+                <EventCard2 events={appState.profile.events.Quiz} />
               </div>
             </div>
             {/* <div className="row">

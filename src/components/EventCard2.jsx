@@ -1,8 +1,11 @@
 import React from "react";
-import {Button} from 'react-bootstrap'
+import { Button } from "react-bootstrap";
 import "../assets/css/eventcard.css";
 
 const EventCard2 = () => {
+  const handleView = (e) => {
+    alert(e);
+  };
   return (
     <div className="container1">
       <div className="card1">
@@ -14,10 +17,8 @@ const EventCard2 = () => {
         </div>
         <div className="contentBx">
           <div className="mt-3 mb-4">
-            
-            <Button variant='light'>View</Button>
+            <Button variant="light">View</Button>
           </div>
-          
         </div>
       </div>
     </div>
