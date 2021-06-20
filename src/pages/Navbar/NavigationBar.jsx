@@ -71,6 +71,9 @@ const NavigationBar = () => {
           <Link className="na-link" to="/">
             Home
           </Link>
+          <Link className="na-link" to="#">
+            About
+          </Link>
           <Link className="na-link" to="/events">
             Events
           </Link>
