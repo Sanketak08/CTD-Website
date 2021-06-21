@@ -17,25 +17,25 @@ const HeadingAnimation3 = () => {
       <ul className={hidden ? "text hidden" : "text"}>
         <div className="sign d-flex">
           <div className="d-flex justify-content-center">
-            <li className="flicker">C</li>
-            <li className="ghost">r</li>
-            <li className="ghost">e</li>
-            <li className="ghost">d</li>
-            <li className="ghost">e</li>
-            <li className="ghost">n</li>
-            <li className="ghost">z</li>
+            <li className="flicker display-1">C</li>
+            <li className="ghost display-1">r</li>
+            <li className="ghost display-1">e</li>
+            <li className="ghost display-1">d</li>
+            <li className="ghost display-1">e</li>
+            <li className="ghost display-1">n</li>
+            <li className="ghost display-1">z</li>
           </div>
           <div className="d-flex justify-content-center">
-            <li className="spaced flicker">T</li>
-            <li className="ghost">e</li>
-            <li className="ghost">c</li>
-            <li className="ghost">h</li>
+            <li className="spaced flicker display-1">T</li>
+            <li className="ghost display-1">e</li>
+            <li className="ghost display-1">c</li>
+            <li className="ghost display-1">h</li>
           </div>
           <div className="d-flex justify-content-center">
-            <li className="spaced flicker">D</li>
-            <li className="ghost">a</li>
-            <li className="ghost">y</li>
-            <li className="ghost">s</li>
+            <li className="spaced flicker display-1">D</li>
+            <li className="ghost display-1">a</li>
+            <li className="ghost display-1">y</li>
+            <li className="ghost display-1">s</li>
           </div>
         </div>
       </ul>

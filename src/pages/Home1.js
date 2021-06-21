@@ -31,16 +31,14 @@ class Home1 extends React.Component {
         </div>
         {/* SECTION-ABOUTUS */}
         <div className="section-about">
-          <Container>
-            <Row
-              className="d-flex justify-content-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+          <Container className="container-lower">
+            <Row className="" data-aos="fade-up" data-aos-duration="1000">
               {/* <HeadingAnimation /> */}
-              <Row className="heading-wrapper">
+              <Row className="d-flex justify-content-start">
                 {/* <h1>Credenz Tech Days</h1> */}
-                <TextScramble text={"About Us"} />
+                <div className="heading-wrapper">
+                  <TextScramble text={"About Us"} />
+                </div>
               </Row>
               <Row className="d-flex justify-content-center mt-5">
                 <p
@@ -69,11 +67,11 @@ class Home1 extends React.Component {
             </Row>
           </Container>
           {/* CAROUSEL */}
-          <Container>
+          <Container fluid>
             <Row className="d-flex justify-content-center align-items-center">
               <Carousel
+                interval={"100000000"}
                 controls={false}
-                interval={4000}
                 style={{ height: "100%", width: "100%" }}
               >
                 <Carousel.Item className="bg-transparent">
@@ -82,7 +80,10 @@ class Home1 extends React.Component {
                       className="d-flex justify-content-center align-items-center"
                       style={{ height: "100%" }}
                     >
-                      <div className="carousel-text gradient-border" id="IEEE">
+                      <div
+                        className="carousel-text gradient-border d-flex justify-content-center"
+                        id="IEEE"
+                      >
                         <Row className="row-inner">
                           <Col className="d-flex align-items-center col-inner">
                             <div className="carousel-text-inner">
