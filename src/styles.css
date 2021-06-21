@@ -1,5 +1,6 @@
 body {
-  background: black !important;
+  background: radial-gradient(circle, rgb(17, 17, 17), rgb(27, 27, 27), rgb(37, 37, 37));
+
 }
 
 ::-webkit-scrollbar {
