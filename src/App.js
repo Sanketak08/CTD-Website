@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <Switch>
         <PublicRoute exact path="/" component={Home1} />
+        <PublicRoute exact path="/About" component={Home1} />
         <PublicRoute exact path="/login" component={RegisterLogin1} />
         <PublicRoute path="/my-profile" component={Profile} />
         <PublicRoute path="/ContactUs" component={ContactUs} />

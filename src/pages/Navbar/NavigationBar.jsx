@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Navbar, Nav, Button, Dropdown } from "react-bootstrap";
 import CTDlogo from "../../assets/img/ctd.png";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import { isLogin } from "../../components/utils/index";
+import { HashLink } from "react-router-hash-link";
 
 const NavigationBar = () => {
   if (isLogin()) {
@@ -20,6 +22,9 @@ const NavigationBar = () => {
             <Link className="na-link" to="/">
               Home
             </Link>
+            <HashLink className="na-link" to="/About/#section-aboutCTD">
+              About
+            </HashLink>
             <Link className="na-link" to="/events">
               Events
             </Link>
@@ -51,17 +56,18 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto">
-          <a className="na-link" href="/">
+          <Link className="na-link" to="/">
             Home
-          </a>
-          <a className="na-link" href="/events">
+          </Link>
+          <Link className="na-link" to="/events">
             Events
-          </a>
-          <a className="na-link" href="#">About</a>
-          <a className="na-link" href="/ContactUs">
+          </Link>
+          <HashLink className="na-link" to="/About/#section-aboutCTD">
+            About
+          </HashLink>
+          <Link className="na-link" to="/ContactUs">
             Contact
-          </a>
-          
+          </Link>
         </Nav>
         <Link className="na-link login" to="/login">
           <Button size="lg">Login</Button>
