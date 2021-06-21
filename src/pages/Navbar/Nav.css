@@ -14,8 +14,13 @@
 }
 
 .nav-bar .login button {
-  background-color: blue;
+  background-color: #45a29e;
   border: none;
+}
+
+.nav-bar .login button:hover,
+.nav-bar .login button:active {
+  background-color: #45a29e !important;
 }
 
 @media screen and (max-width: 1200px) {
