@@ -68,6 +68,9 @@ const NavigationBar = () => {
           <Link className="na-link" to="/ContactUs">
             Contact
           </Link>
+          <Link className="na-link" to="/my-profile">
+            Profile
+          </Link>
         </Nav>
         <Link className="na-link login" to="/login">
           <Button size="lg">Login</Button>
