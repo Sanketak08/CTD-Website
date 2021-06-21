@@ -3,6 +3,7 @@ import Event from "./Event";
 import Inquizitive from "./icons/inquizitive.png";
 import NCC from "./icons/NCC.png";
 import RC from "./icons/RC.png";
+import NTH from './icons/nth-logo.png';
 import { Container, Row, Col } from "react-bootstrap";
 
 const Events = () => {
@@ -43,7 +44,7 @@ const Events = () => {
           <Col  className='mt-3 mb-5' lg={3} md={6} sm={12}>
             <Event
               info={nccBasicInfo}
-              icon={RC}
+              icon={NTH}
               eventname="NTH"
             />
           </Col>
