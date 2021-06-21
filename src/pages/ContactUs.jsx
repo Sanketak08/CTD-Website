@@ -4,10 +4,11 @@ import "../styles.css";
 import "../assets/css/ContactUs.css";
 import ContactCard1 from "../components/ContactCard1";
 import TextScramble from "../components/TextScramble";
+import Atharva from "../pages/WebTeam/Images/naphade.jpeg";
 const ContactUs = () => {
   return (
     <div className="body-ContactUs pt-3">
-      <Container className="container-upper">
+      <Container className="container-upper-contactUs">
         {/* <Row className='headingContactUs justify-content-center mb-5'>
           <HeadingAnimation />
           <div className='heading-aboutUs display-3 mb-5'>About Us</div>
@@ -27,28 +28,31 @@ const ContactUs = () => {
         >
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
-              name="John Green"
-              number="+91 7651123428"
+              name="Atharva Naphade"
+              number="+91 9423754562"
               link1="johngreen@gmail.com"
+              image={Atharva}
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
-              name="Alan Becker"
-              number="+91 9876653213"
+              name="Shivendu"
+              number="+91 7030063914"
               link1="abecker@gmail.com"
+              image={Atharva}
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
-              name="David Wallace"
-              number="+91 83133337421"
+              name="Tanvi Mane"
+              number="+91 7020836169"
               link1="david@dm.com"
+              image={Atharva}
             />
           </Col>
         </Row>
       </Container>
-      <Container fluid className="container-lower">
+      <Container fluid className="container-lower-contactUs">
         <Row style={{ margin: 0 }}>
           <Col
             data-aos="fade-up"

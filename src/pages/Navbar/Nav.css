@@ -4,10 +4,6 @@
   font-size: 14px !important;
 }
 
-.active {
-  background-color: rgb(20, 20, 20);
-}
-
 .nav-bar .m-auto a {
   text-decoration: none;
   color: white !important;
@@ -54,9 +50,3 @@
   background-position: bottom left;
 
 }
-
-/* 
-.navbar-nav .active a {
-  background-color: #C0C0C0;
-  color: green;
-} */

@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/contactCard1.css";
-const ContactCard1 = ({ name, link, number }) => {
+const ContactCard1 = ({ name, link, number, image }) => {
   return (
     <div className="container">
       <div className="row d-flex justify-content-center">
@@ -8,8 +8,9 @@ const ContactCard1 = ({ name, link, number }) => {
           <div className="picture">
             <img
               className="img-fluid"
-              src="https://source.unsplash.com/random/200x200"
+              src={image}
               alt="sampleIMg"
+              style={{ height: "150px", width: "150px" }}
             />
           </div>
           <div className="team-content">

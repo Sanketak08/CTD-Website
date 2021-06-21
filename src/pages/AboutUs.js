@@ -1,61 +1,26 @@
-import React from "react";
-import WAVES from "vanta/dist/vanta.waves.min";
-import "../assets/css/Home1.css";
-import "../assets/css/homeAndAbout.css";
-import "../assets/css/carouselAnimation.css";
-import ctdlogo from "../assets/img/ctd.png";
-import TextScramble from "../components/TextScramble";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+// import styles 
+import {Row, Col, Container, Carousel} from 'react-bootstrap';
 
-class Home1 extends React.Component {
-  constructor() {
-    super();
-    this.vantaRef = React.createRef();
-  }
-  componentDidMount() {
-    this.vantaEffect = WAVES({
-      el: this.vantaRef.current,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      scale: 1,
-      scaleMobile: 1.0,
-      color: 0x111111,
-      shininess: 29.0,
-      waveHeight: 11,
-    });
-  }
-  componentWillUnmount() {
-    if (this.vantaEffect) this.vantaEffect.destroy();
-  }
-  render() {
-    return (
-      <div className="home-page">
-        <div
-          className="section-home d-flex justify-content-center align-items-center "
-          ref={this.vantaRef}
-        >
-          {/* <HeadingAnimation3 /> */}
-          <div className="ctd-image">
-            <img src={ctdlogo} alt="ctd-logo" />
-          </div>
-        </div>
-        {/* SECTION-ABOUTUS */}
+// import components
+import TextScramble from '../components/TextScramble';
+
+const AboutUs = () => {
+    return ( 
         <div className="section-about">
-          <Container className="container-lower">
-            <Row className="" data-aos="fade-up" data-aos-duration="1000">
+          <Container>
+            <Row
+              className="d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {/* <HeadingAnimation /> */}
-              <Row className="d-flex justify-content-start">
+              <Row className="heading-wrapper">
                 {/* <h1>Credenz Tech Days</h1> */}
-                <div className="heading-wrapper">
-                  <TextScramble text={"About Us"} />
-                </div>
+                <TextScramble text={"About Us"} />
               </Row>
-              <Row className="d-flex justify-content-center mt-5">
+              <Row className="justify-content-center mt-5">
                 <p
-                  className="lead text-justify p-2 about-content"
+                  className="lead text-justify about-content"
                   style={{ fontWeight: 400, width: "85%" }}
                 >
                   Credenz Tech Dayz (CTD) is organized by the PICT IEEE Student
@@ -80,11 +45,11 @@ class Home1 extends React.Component {
             </Row>
           </Container>
           {/* CAROUSEL */}
-          <Container fluid>
+          <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Carousel
-                interval={"100000000"}
                 controls={false}
+                interval={4000}
                 style={{ height: "100%", width: "100%" }}
               >
                 <Carousel.Item className="bg-transparent">
@@ -93,10 +58,7 @@ class Home1 extends React.Component {
                       className="d-flex justify-content-center align-items-center"
                       style={{ height: "100%" }}
                     >
-                      <div
-                        className="carousel-text gradient-border d-flex justify-content-center"
-                        id="IEEE"
-                      >
+                      <div className="carousel-text gradient-border" id="IEEE">
                         <Row className="row-inner">
                           <Col className="d-flex align-items-center col-inner">
                             <div className="carousel-text-inner">
@@ -120,6 +82,14 @@ class Home1 extends React.Component {
                               </p>
                             </div>
                           </Col>
+                          {/* <Col md={4}>
+                        <img
+                          src={IEEE_logo}
+                          style={{ height: "250px" }}
+                          alt="IEEE img"
+                          className="img-fluid"
+                        />
+                      </Col> */}
                         </Row>
                       </div>
                     </Carousel.Caption>
@@ -155,6 +125,14 @@ class Home1 extends React.Component {
                               </p>
                             </div>
                           </Col>
+                          {/* <Col md={4}>
+                        <img
+                          src={PISB_logo}
+                          style={{ height: "200px" }}
+                          alt="IEEE img"
+                          className="img-fluid"
+                        />
+                      </Col> */}
                         </Row>
                       </div>
                     </Carousel.Caption>
@@ -191,6 +169,14 @@ class Home1 extends React.Component {
                               </p>
                             </div>
                           </Col>
+                          {/* <Col md={4}>
+                        <img
+                          src={PING_logo}
+                          style={{ height: "250px" }}
+                          alt="IEEE img"
+                          className="img-fluid"
+                        />
+                      </Col> */}
                         </Row>
                       </div>
                     </Carousel.Caption>
@@ -200,8 +186,7 @@ class Home1 extends React.Component {
             </Row>
           </Container>
         </div>
-      </div>
-    );
-  }
+     );
 }
-export default Home1;
+ 
+export default AboutUs;
