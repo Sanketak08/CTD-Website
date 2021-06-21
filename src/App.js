@@ -15,6 +15,7 @@ import "./assets/css/Home1.css";
 function App() {
   return (
     <Router>
+      <Navbar></Navbar>
       <Switch>
         <PublicRoute exact path="/">
           <Home1 />

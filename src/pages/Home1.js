@@ -4,9 +4,7 @@ import "../assets/css/Home1.css";
 import "../assets/css/homeAndAbout.css";
 import "../assets/css/carouselAnimation.css";
 import HeadingAnimation3 from "../components/HeadingAnimation3";
-import Navbar from './Navbar/NavigationBar'
-
-
+import ctdlogo from "../assets/img/ctd.png";
 
 class Home1 extends React.Component {
   constructor() {
@@ -16,9 +14,16 @@ class Home1 extends React.Component {
   componentDidMount() {
     this.vantaEffect = WAVES({
       el: this.vantaRef.current,
-      color: 0x101010,
-      shininess: 150,
-      minHeight: 650.0,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1,
+      scaleMobile: 1.0,
+      color: 0x111111,
+      shininess: 29.0,
+      waveHeight: 11,
     });
   }
   componentWillUnmount() {
@@ -27,7 +32,9 @@ class Home1 extends React.Component {
   render() {
     return (
       <div className="home-page" ref={this.vantaRef}>
-        <Navbar></Navbar>
+        <div className="ctd-image">
+          <img src={ctdlogo} />
+        </div>
         <div className="section-home d-flex justify-content-center align-items-center ">
           <HeadingAnimation3 />
         </div>
