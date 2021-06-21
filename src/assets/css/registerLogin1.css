@@ -219,12 +219,12 @@
   height: 30px;
   line-height: 30px;
   padding: 19px 15px;
-  border-bottom: 1px solid rgb(143, 143, 143);
+  border-bottom: 1px solid #ffffff;
   width: 100%;
   font-size: 18px;
 }
 .form-structor .login .center .form-holder .input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
 }
 .form-structor .login .center .submit-btn {
   background-color: #272626;

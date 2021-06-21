@@ -43,7 +43,7 @@ class Home1 extends React.Component {
           </div>
         </div>
         {/* SECTION-ABOUTUS */}
-        <div className="section-about">
+        <div className="section-about" id="section-aboutCTD">
           <Container className="container-lower">
             <Row className="" data-aos="fade-up" data-aos-duration="1000">
               {/* <HeadingAnimation /> */}
@@ -83,7 +83,7 @@ class Home1 extends React.Component {
           <Container fluid>
             <Row className="d-flex justify-content-center align-items-center">
               <Carousel
-                interval={"100000000"}
+                interval={"4000"}
                 controls={false}
                 style={{ height: "100%", width: "100%" }}
               >

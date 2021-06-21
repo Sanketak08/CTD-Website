@@ -20,9 +20,6 @@ const NavigationBar = () => {
             <Link className="na-link" to="/">
               Home
             </Link>
-            <Link className="na-link" to="#">
-              AboutUs
-            </Link>
             <Link className="na-link" to="/events">
               Events
             </Link>
@@ -32,7 +29,6 @@ const NavigationBar = () => {
             <Link className="na-link" to="my-profile">
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">My name</Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item href="/my-profile">My Profile</Dropdown.Item>
                   <Dropdown.Item href="#">Logout</Dropdown.Item>
@@ -57,9 +53,6 @@ const NavigationBar = () => {
         <Nav className="m-auto">
           <Link className="na-link" to="/">
             Home
-          </Link>
-          <Link className="na-link" to="/">
-            About
           </Link>
           <Link className="na-link" to="/events">
             Events
