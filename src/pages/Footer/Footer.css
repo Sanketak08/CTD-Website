@@ -1,6 +1,6 @@
 .footer {
   background-color: rgb(20, 20, 20);
-  padding: 20px 0 5px ;
+  padding: 20px 0 5px;
   color: #fff;
 }
 
@@ -18,16 +18,15 @@
 .footer-text {
   font-size: 20.8px;
   margin-bottom: 0;
-  font-family: "Inconsolata", monospace;
+  font-family: "Roboto Mono", "Inconsolata", monospace;
 }
 
-
-.footer .fab{
+.footer .fab {
   transform: translateY(-4px);
   transition: 0.5s ease-out;
 }
 
-.footer .fab:hover{
+.footer .fab:hover {
   transform: rotate(360deg);
 }
 

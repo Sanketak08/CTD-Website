@@ -1,7 +1,15 @@
 .container1 {
   position: relative;
 }
-
+.details-btn-profile {
+  background-color: #66fcf1 !important;
+  color: black !important;
+  border: none !important;
+}
+.details-btn-profile:hover {
+  transition: 0.15s ease-in !important;
+  transform: scale(1.05) !important;
+}
 .container1 .card1 {
   position: relative;
   width: 320px;

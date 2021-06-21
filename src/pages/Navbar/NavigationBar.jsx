@@ -73,7 +73,7 @@ const NavigationBar = () => {
           </Link>
         </Nav>
         <Link className="na-link login" to="/login">
-          <Button size="lg">Login</Button>
+          Login
         </Link>
       </Navbar.Collapse>
     </Navbar>

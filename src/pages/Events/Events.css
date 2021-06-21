@@ -17,7 +17,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #5a4ff5;
+  background-color: #66fcf1 !important;
+  /* background: #45a29a; */
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
@@ -147,6 +148,18 @@
 .container1 .card1:hover .contentBx Button {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.register-btn {
+  background-color: #66fcf1 !important;
+  /* background-color: #45a29e !important; */
+  color: black !important;
+  border: none !important;
+}
+.register-btn:hover,
+.details-btn:hover {
+  transition: 0.15s ease-in !important;
+  transform: scale(1.05) !important;
 }
 
 @media (max-width: 768px) {
