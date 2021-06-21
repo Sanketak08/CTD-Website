@@ -59,12 +59,12 @@ const NavigationBar = () => {
           <Link className="na-link" to="/">
             Home
           </Link>
-          <Link className="na-link" to="/events">
-            Events
-          </Link>
           <HashLink className="na-link" to="/About/#section-aboutCTD">
             About
           </HashLink>
+          <Link className="na-link" to="/events">
+            Events
+          </Link>
           <Link className="na-link" to="/ContactUs">
             Contact
           </Link>
