@@ -15,7 +15,7 @@ const ContactCard1 = ({ name, link, number, image }) => {
           </div>
           <div className="team-content">
             <h3 className="name">{name}</h3>
-            <h4 className="number">{number}</h4>
+            <a href={"tel:"+number}><h4 className="number">{number}</h4></a>
           </div>
           <ul className="social">
             <li>{/* Link here */}</li>

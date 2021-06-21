@@ -4,7 +4,10 @@ import "../styles.css";
 import "../assets/css/ContactUs.css";
 import ContactCard1 from "../components/ContactCard1";
 import TextScramble from "../components/TextScramble";
-import Atharva from "../pages/WebTeam/Images/naphade.jpeg";
+import Atharva from '../assets/img/atharva1.jpeg'
+import Tanvi from '../assets/img/tanvi.jpg'
+
+
 const ContactUs = () => {
   return (
     <div className="body-ContactUs pt-3">
@@ -47,7 +50,7 @@ const ContactUs = () => {
               name="Tanvi Mane"
               number="+91 7020836169"
               link1="david@dm.com"
-              image={Atharva}
+              image={Tanvi}
             />
           </Col>
         </Row>
