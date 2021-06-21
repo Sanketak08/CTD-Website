@@ -38,7 +38,11 @@ class Home1 extends React.Component {
           ref={this.vantaRef}
         >
           {/* <HeadingAnimation3 /> */}
-          <div className="ctd-image">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="ctd-image"
+          >
             <img src={ctdlogo} alt="ctd-logo" />
           </div>
         </div>
