@@ -24,17 +24,6 @@ const Event = (props) => {
       });
   };
 
-  //   function flip(event) {
-  //     var element = event.currentTarget;
-  //     if (element.className === "card") {
-  //       if (element.style.transform === "rotateY(180deg)") {
-  //         element.style.transform = "rotateY(0deg)";
-  //       } else {
-  //         element.style.transform = "rotateY(180deg)";
-  //       }
-  //     }
-  //   }
-
   return (
     <div className="container1  d-flex justify-content-center mt-res">
       <div className="card1">

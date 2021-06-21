@@ -6,6 +6,7 @@ import ContactCard1 from "../components/ContactCard1";
 import TextScramble from "../components/TextScramble";
 import Atharva from '../assets/img/atharva1.jpeg'
 import Tanvi from '../assets/img/tanvi.jpg'
+import Shivendu from '../assets/img/shivendu.jpeg'
 
 
 const ContactUs = () => {
@@ -39,10 +40,10 @@ const ContactUs = () => {
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
-              name="Shivendu"
+              name="Shivendu Shukre"
               number="+91 7030063914"
               link1="abecker@gmail.com"
-              image={Atharva}
+              image={Shivendu}
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
