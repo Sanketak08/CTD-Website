@@ -4,7 +4,11 @@ import "../styles.css";
 import "../assets/css/ContactUs.css";
 import ContactCard1 from "../components/ContactCard1";
 import TextScramble from "../components/TextScramble";
-import Atharva from "../pages/WebTeam/Images/naphade.jpeg";
+import Atharva from '../assets/img/atharva1.jpeg'
+import Tanvi from '../assets/img/tanvi.jpg'
+import Shivendu from '../assets/img/shivendu.jpeg'
+
+
 const ContactUs = () => {
   return (
     <div className="body-ContactUs pt-3">
@@ -36,10 +40,10 @@ const ContactUs = () => {
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
             <ContactCard1
-              name="Shivendu"
+              name="Shivendu Shukre"
               number="+91 7030063914"
               link1="abecker@gmail.com"
-              image={Atharva}
+              image={Shivendu}
             />
           </Col>
           <Col className="mt-3 d-flex justify-content-center">
@@ -47,7 +51,7 @@ const ContactUs = () => {
               name="Tanvi Mane"
               number="+91 7020836169"
               link1="david@dm.com"
-              image={Atharva}
+              image={Tanvi}
             />
           </Col>
         </Row>
