@@ -38,14 +38,14 @@
 }
 
 .nav-bar .m-auto a {
-  background: linear-gradient(to top, rgb(185, 185, 185) 50%, transparent 50%);
+  background: linear-gradient(to top, rgb(248, 248, 248) 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: top left;
   transition: all 0.5s ease-out;
   border-radius: 1.5px;
 }
 
-.nav-bar .m-auto a:hover, .nav-bar .m-auto a:focus {
+.nav-bar .m-auto a:hover {
   color: rgb(26, 26, 26) !important;
   background-position: bottom left;
 
