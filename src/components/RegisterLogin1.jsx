@@ -172,19 +172,9 @@ const RegisterLogin1 = () => {
                 className="input m-2"
                 name="first_name"
                 id="first_name"
-                placeholder="First Name"
+                placeholder="Name"
                 onChange={handleRegisterChange}
               />
-              <input
-                type="text"
-                className="input m-2"
-                name="last_name"
-                id="last_name"
-                placeholder="Last Name"
-                onChange={handleRegisterChange}
-              />
-            </div>
-            <div className="form-holder">
               <input
                 type="email"
                 className="input m-2"
@@ -201,6 +191,8 @@ const RegisterLogin1 = () => {
                 placeholder="Contact"
                 onChange={handleProfileChange}
               />
+            </div>
+            <div className="form-holder">
               <input
                 type="text"
                 className="input m-2"
@@ -209,8 +201,6 @@ const RegisterLogin1 = () => {
                 placeholder="MIS ID (C2K1234567)"
                 onChange={handleProfileChange}
               />
-            </div>
-            <div className="form-holder">
               <input
                 type="text"
                 className="input m-2"
