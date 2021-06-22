@@ -35,7 +35,7 @@
   font-size: 12em;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 25, 0.05);
+  color: rgba(14, 14, 14);
 }
 
 .container1 .card1 .imgBx {
@@ -182,6 +182,11 @@
 
 .event-info {
   margin: 4% 0 4% 15%;
+}
+
+
+.details-modal img {
+  width: 200px;
 }
 
 @media screen and (max-width: 575px) {

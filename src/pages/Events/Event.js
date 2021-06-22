@@ -24,39 +24,7 @@ const Event = (props) => {
       });
   };
 
-  if (props.eventName === "NTH") {
-    return (
-      <div className="container1  d-flex justify-content-center mt-res">
-        <div className="card1">
-          <div className="imgBx">
-            <img alt={props.eventname} src={props.icon} />
-          </div>
-          <div className="contentBx">
-            <h3>{props.name}</h3>
-
-            <Button
-              className="mt-3 mb-3 pl-4 pr-4"
-              onClick={() => setModalShow(true)}
-              variant="outline-light"
-            >
-              Details
-            </Button>
-            <DetailsModal
-              eventName={props.eventname}
-              logo={props.icon}
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-            />
-            <div>
-              <Button variant="light" href="#">
-                Register
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  
 
   return (
     <div className="container1  d-flex justify-content-center mt-res">
@@ -75,7 +43,7 @@ const Event = (props) => {
             Details
           </Button>
           <DetailsModal
-            eventName={props.eventname}
+            eventname={props.eventname}
             logo={props.icon}
             show={modalShow}
             onHide={() => setModalShow(false)}

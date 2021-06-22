@@ -1,10 +1,10 @@
-import { Modal, Container, Row, Col } from "react-bootstrap";
+import { Modal, Container, Row, Col, Tabs, Tab, Nav } from "react-bootstrap";
 
 const DetailsModal = (props) => {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="md"
       className="details-modal"
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -12,20 +12,46 @@ const DetailsModal = (props) => {
       <Modal.Header closeButton>
         <h3>{props.eventname}</h3>
       </Modal.Header>
-      <Container fluid>
+      <Tab.Container
+        className="tabs"
+        id="left-tabs-example"
+        defaultActiveKey="first"
+      >
         <Row>
-          <Col lg={3} sm={3}>
-            <img alt="Event LOGO" src={props.logo} />
+          <Col sm={1}></Col>
+          <Col sm={3}>
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item>
+                <Nav.Link eventKey="first">Info</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="second">Rules</Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link eventKey="third">Contact</Nav.Link>
+              </Nav.Item>
+            </Nav>
           </Col>
-          <Col lg={9} sm={9}>
-            <h5 className="event-info">
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </h5>
+          <Col sm={7}>
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+                Network Treasure Hunt is an online treasure hunt where
+                participants follow a trail of clues, surfing a range of
+                websites to decipher the puzzles. Tread carefully along your
+                way, solving a series of strategic clues, watching out for the
+                concealed misdirection. Decrypt the clues, enjoy the hunt and
+                race your way to the finish to win some exciting goodies! This
+                is your chance to put your logic and reasoning to test. So, log
+                on to our website and be a Sherlock for a day!
+              </Tab.Pane>
+              <Tab.Pane eventKey="second">Bitch</Tab.Pane>
+              <Tab.Pane eventKey="third">Bitch</Tab.Pane>
+            </Tab.Content>
           </Col>
+          <Col sm={1}></Col>
         </Row>
-      </Container>
+      </Tab.Container>
     </Modal>
   );
 };
