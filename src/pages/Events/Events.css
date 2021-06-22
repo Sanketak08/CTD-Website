@@ -203,4 +203,11 @@
   .details-modal img {
     width: 35%;
   }
+  .details-modal .tabs{
+    padding: 0 1%  !important;
+  }
+  .details-modal .tab-content{
+    padding: 1% 1% 1.5%;
+  }
+  
 }
