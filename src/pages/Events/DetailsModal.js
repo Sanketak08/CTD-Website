@@ -13,14 +13,13 @@ const DetailsModal = (props) => {
         <h3>{props.eventname}</h3>
       </Modal.Header>
       <Tab.Container
-        className="tabs"
+        className="tabs p-4"
         id="left-tabs-example"
         defaultActiveKey="first"
       >
         <Row>
-          <Col sm={1}></Col>
           <Col sm={3}>
-            <Nav variant="pills" className="flex-column">
+            <Nav variant="pills" className="flex-column tabs">
               <Nav.Item>
                 <Nav.Link eventKey="first">Info</Nav.Link>
               </Nav.Item>
@@ -33,9 +32,9 @@ const DetailsModal = (props) => {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={7}>
+          <Col sm={8}>
             <Tab.Content>
-              <Tab.Pane eventKey="first">
+              <Tab.Pane className='tab-content' eventKey="first">
                 Network Treasure Hunt is an online treasure hunt where
                 participants follow a trail of clues, surfing a range of
                 websites to decipher the puzzles. Tread carefully along your
@@ -49,7 +48,7 @@ const DetailsModal = (props) => {
               <Tab.Pane eventKey="third">Bitch</Tab.Pane>
             </Tab.Content>
           </Col>
-          <Col sm={1}></Col>
+          
         </Row>
       </Tab.Container>
     </Modal>

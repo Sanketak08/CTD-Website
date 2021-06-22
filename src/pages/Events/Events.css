@@ -184,10 +184,17 @@
   margin: 4% 0 4% 15%;
 }
 
+.details-modal .tabs{
+  padding: 0 1% 0 8% !important;
+}
 
 .details-modal img {
   width: 200px;
 }
+.details-modal .tab-content{
+  padding: 0 3% 2.5% 0;
+}
+
 
 @media screen and (max-width: 575px) {
   .event-info {
