@@ -1,4 +1,4 @@
-import { Modal, Container, Row, Col, Tabs, Tab, Nav } from "react-bootstrap";
+import { Modal, Row, Col, Tab, Nav } from "react-bootstrap";
 
 const DetailsModal = (props) => {
   return (
@@ -34,7 +34,7 @@ const DetailsModal = (props) => {
           </Col>
           <Col sm={8}>
             <Tab.Content>
-              <Tab.Pane className='tab-content' eventKey="first">
+              <Tab.Pane className="tab-content" eventKey="first">
                 Network Treasure Hunt is an online treasure hunt where
                 participants follow a trail of clues, surfing a range of
                 websites to decipher the puzzles. Tread carefully along your
@@ -48,7 +48,6 @@ const DetailsModal = (props) => {
               <Tab.Pane eventKey="third">Bitch</Tab.Pane>
             </Tab.Content>
           </Col>
-          
         </Row>
       </Tab.Container>
     </Modal>
