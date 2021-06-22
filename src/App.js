@@ -14,17 +14,38 @@ import "./assets/css/Home1.css";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Switch>
-        <PublicRoute exact path="/" component={Home1} />
+        <PublicRoute exact path="/"  >
+          <Home1></Home1>
+        </PublicRoute>
         <PublicRoute exact path="/About" component={Home1} />
-        <PublicRoute exact path="/login" component={RegisterLogin1} />
-        <PublicRoute path="/my-profile" component={Profile} />
-        <PublicRoute path="/ContactUs" component={ContactUs} />
-        <PublicRoute path="/team" component={Webteam} />
-        <PublicRoute path="/events" component={Events} />
+        <PublicRoute exact path="/login" component={RegisterLogin1} >
+          <Navbar></Navbar>
+          <RegisterLogin1></RegisterLogin1>
+          <Footer></Footer>
+        </PublicRoute>
+        <PublicRoute path="/my-profile" >
+          <Navbar></Navbar>
+          <Profile></Profile>
+          <Footer></Footer>
+        </PublicRoute>
+        <PublicRoute path="/ContactUs" >
+          <Navbar></Navbar>
+          <ContactUs></ContactUs>
+          <Footer></Footer>
+        </PublicRoute>
+        <PublicRoute path="/team" >
+          <Navbar></Navbar>
+          <Webteam></Webteam>
+          <Footer></Footer>
+        </PublicRoute>
+        <PublicRoute path="/events" >
+          <Navbar></Navbar>
+          <Events></Events>
+          <Footer></Footer>
+        </PublicRoute>
       </Switch>
-      <Footer />
+      
     </Router>
   );
 }

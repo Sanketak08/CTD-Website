@@ -5,6 +5,8 @@ import "../assets/css/homeAndAbout.css";
 import "../assets/css/carouselAnimation.css";
 import ctdlogo from "../assets/img/ctd.png";
 import TextScramble from "../components/TextScramble";
+import Navbar from './Navbar/NavigationBar'
+import Footer from './Footer/Footer'
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 
 class Home1 extends React.Component {
@@ -33,18 +35,20 @@ class Home1 extends React.Component {
   render() {
     return (
       <div className="home-page">
-        <div
-          ref={this.vantaRef}
-          className="section-home d-flex justify-content-center align-items-center "
-        >
-          {/* <HeadingAnimation3 /> */}
+        
+        <div ref={this.vantaRef}>
+          <Navbar></Navbar>
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="ctd-image"
+            className="section-home d-flex justify-content-center align-items-center ctd-image"
+        
           >
             <img src={ctdlogo} alt="ctd-logo" />
           </div>
+          
+          {/* <HeadingAnimation3 /> */}
+          
         </div>
         {/* SECTION-ABOUTUS */}
         <div className="section-about" id="section-aboutCTD">
@@ -204,6 +208,7 @@ class Home1 extends React.Component {
             </Row>
           </Container>
         </div>
+        <Footer></Footer>
       </div>
     );
   }
