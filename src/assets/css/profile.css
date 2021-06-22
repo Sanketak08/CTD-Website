@@ -87,8 +87,4 @@ eventIconWrapper,
   .mt-res {
     margin-bottom: 5rem;
   }
-  .rowDir {
-    justify-content: center;
-    align-items: center;
-  }
 }

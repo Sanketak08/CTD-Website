@@ -6,7 +6,7 @@
   position: relative;
   width: 250px;
   height: 370px;
-  background: #232323;
+  background: #212730;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #66fcf1 !important;
+  background-color: #29a19c !important;
   /* background: #45a29a; */
   clip-path: circle(150px at 80% 20%);
   transition: 0.5s ease-in-out;
@@ -151,7 +151,7 @@
 }
 
 .register-btn {
-  background-color: #66fcf1 !important;
+  background-color: #29a19c !important;
   /* background-color: #45a29e !important; */
   color: black !important;
   border: none !important;
@@ -184,17 +184,16 @@
   margin: 4% 0 4% 15%;
 }
 
-.details-modal .tabs{
+.details-modal .tabs {
   padding: 0 1% 0 8% !important;
 }
 
 .details-modal img {
   width: 200px;
 }
-.details-modal .tab-content{
+.details-modal .tab-content {
   padding: 0 3% 2.5% 0;
 }
-
 
 @media screen and (max-width: 575px) {
   .event-info {
@@ -203,11 +202,10 @@
   .details-modal img {
     width: 35%;
   }
-  .details-modal .tabs{
-    padding: 0 1%  !important;
+  .details-modal .tabs {
+    padding: 0 1% !important;
   }
-  .details-modal .tab-content{
+  .details-modal .tab-content {
     padding: 1% 1% 1.5%;
   }
-  
 }

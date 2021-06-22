@@ -34,8 +34,8 @@ class Home1 extends React.Component {
     return (
       <div className="home-page">
         <div
-          className="section-home d-flex justify-content-center align-items-center "
           ref={this.vantaRef}
+          className="section-home d-flex justify-content-center align-items-center "
         >
           {/* <HeadingAnimation3 /> */}
           <div
@@ -54,7 +54,7 @@ class Home1 extends React.Component {
               <Row className="d-flex justify-content-start">
                 {/* <h1>Credenz Tech Days</h1> */}
                 <div className="heading-wrapper">
-                  <TextScramble text={"About Us"} />
+                  <TextScramble text={"Credenz Tech Dayz"} />
                 </div>
               </Row>
               <Row className="d-flex justify-content-center mt-5">

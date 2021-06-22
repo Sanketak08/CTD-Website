@@ -2,7 +2,7 @@
   position: relative;
 }
 .details-btn-profile {
-  background-color: #66fcf1 !important;
+  background-color: #29a19c !important;
   color: black !important;
   border: none !important;
 }
@@ -13,7 +13,7 @@
 .container1 .card1 {
   position: relative;
   width: 320px;
-  background: #232323;
+  background: #212730;
   border-radius: 20px;
   overflow: hidden;
 }

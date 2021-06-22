@@ -48,9 +48,8 @@
 }
 .form-structor .signup {
   position: absolute;
-
-  background: rgba(0, 0, 0, 0.523);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #212730;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.863);
   backdrop-filter: blur(0px);
   border-radius: 10px;
   padding: 10px;
@@ -126,13 +125,13 @@
   height: 30px;
   line-height: 30px;
   padding: 19px 15px;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(69, 162, 157, 0.479);
   width: 100%;
   font-size: 18px;
   color: #ffffff;
 }
 .form-structor .signup .form-holder .input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.555);
+  color: #45a29e;
 }
 .form-structor .signup .submit-btn {
   /* background-color: rgba(0, 0, 0, 0.4); */
@@ -143,7 +142,7 @@
   display: block;
   margin: 15px auto;
   padding: 12px 45px;
-  width: 85%;
+  width: 55%;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -161,7 +160,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #66fcf1;
+  background-color: #45a29e;
   color: white;
   z-index: 5;
   -webkit-transition: all 0.3s ease;
@@ -173,7 +172,7 @@
   top: -20px;
   -webkit-transform: translate(-50%, 0);
   width: 200%;
-  background-color: #66fcf1;
+  background-color: #45a29e;
   /* background-color: #000; */
   color: white;
   height: 250px;
@@ -227,7 +226,7 @@
   color: #524c4c;
 }
 .form-structor .login .center .submit-btn {
-  background-color: #383535;
+  background-color: #212730;
   color: #ffffff;
   border: 0;
   border-radius: 15px;
