@@ -17,7 +17,7 @@ const EventCard2 = () => {
         </div>
         <div className="contentBx">
           <div className="mt-3 mb-4">
-            <Button variant="light">View</Button>
+            <Button className="details-btn-profile">View</Button>
           </div>
         </div>
       </div>

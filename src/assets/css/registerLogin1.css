@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
 .border-gradient {
-  border: 10px solid;
+  border: 10px solid !important;
   border-image-slice: 1;
   border-width: 5px;
 }
@@ -136,7 +136,7 @@
 }
 .form-structor .signup .submit-btn {
   /* background-color: rgba(0, 0, 0, 0.4); */
-  background-color: #29a19c;
+  background-color: #45a29e;
   color: rgb(256, 256, 256);
   border: 0;
   border-radius: 15px;
@@ -161,7 +161,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #29a19c;
+  background-color: #66fcf1;
   color: white;
   z-index: 5;
   -webkit-transition: all 0.3s ease;
@@ -173,7 +173,7 @@
   top: -20px;
   -webkit-transform: translate(-50%, 0);
   width: 200%;
-  background-color: #29a19c;
+  background-color: #66fcf1;
   /* background-color: #000; */
   color: white;
   height: 250px;
@@ -219,15 +219,15 @@
   height: 30px;
   line-height: 30px;
   padding: 19px 15px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #383535;
   width: 100%;
   font-size: 18px;
 }
 .form-structor .login .center .form-holder .input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #524c4c;
 }
 .form-structor .login .center .submit-btn {
-  background-color: #272626;
+  background-color: #383535;
   color: #ffffff;
   border: 0;
   border-radius: 15px;

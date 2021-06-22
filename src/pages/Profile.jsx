@@ -43,13 +43,14 @@ const Profile = () => {
               <div className="circle">
                 <p className="initials">JD</p>
               </div>
-              <div className="mt-4 name h2">fuywef</div>
+              <div className="mt-4 name h2">John Doe</div>
             </div>
             {/* Personal Details */}
-            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center rowDir">
-              <PersonalDetails name="eger" icon="fa fa-envelope" />
-              <PersonalDetails name="ger" icon="fa fa-cubes" />
-              <PersonalDetails name="gerg" icon="fa fa-phone" />
+            <div className="col-md-2"></div>
+            <div className="col-12 col-md-4 d-flex justify-content-center aligdn-items-center rowDir">
+              <PersonalDetails name="johndoe@gmail.com" icon="fa fa-envelope" />
+              <PersonalDetails name="Senior" icon="fa fa-cubes" />
+              <PersonalDetails name="9867543678" icon="fa fa-phone" />
             </div>
           </div>
         </div>

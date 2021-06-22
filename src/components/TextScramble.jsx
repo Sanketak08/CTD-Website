@@ -71,12 +71,22 @@ class TextScramble extends React.Component {
   componentDidMount() {
     const el = document.querySelector(".text-scramble");
     const fx = new TextScramble(el);
+    let flag = true;
     function next() {
       //       console.log(el.innerHTML);
       fx.setText(el.innerHTML).then(() => {});
     }
     next();
-    setTimeout(() => next(), 5000);
+    window.addEventListener("scroll", (e) => {
+      e.preventDefault();
+      if (window.scrollY > 890 && flag) {
+        next();
+        flag = false;
+      }
+      if (window.scrollY <= 325) {
+        flag = true;
+      }
+    });
   }
   render() {
     // eslint-disable-next-line jsx-a11y/heading-has-content

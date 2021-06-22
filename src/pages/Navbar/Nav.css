@@ -1,6 +1,6 @@
 .nav-bar {
   background-color: transparent;
-  font-family: "Inconsolata", monospace;
+  font-family: "Roboto Mono", "Inconsolata", monospace;
   font-size: 14px !important;
 }
 
@@ -13,14 +13,18 @@
   position: relative;
 }
 
-
-.nav-bar .login button{
-  background-color: blue;
+.nav-bar .login button {
+  background-color: #45a29e;
   border: none;
 }
 
-@media screen and (max-width:1200px) {
-  .nav-bar .login button{
+.nav-bar .login button:hover,
+.nav-bar .login button:active {
+  background-color: #45a29e !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar .login button {
     margin: 1% 5%;
   }
 }
@@ -31,7 +35,6 @@
     margin: 2% 0%;
   }
 }
-
 
 .nav-bar button {
   background-color: white;
@@ -48,5 +51,4 @@
 .nav-bar .m-auto a:hover {
   color: rgb(26, 26, 26) !important;
   background-position: bottom left;
-
 }
