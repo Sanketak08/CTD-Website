@@ -73,14 +73,11 @@ const Profile = () => {
           </div>
           <div className="mt-5">
             <div data-aos="fade-up" data-aos-duration="1000" className="row">
-              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
-                <EventCard2 />
-              </div>
-              <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
+              <div className="col-12 col-md-4 d-flex justify-content-center mt-res">
                 <EventCard2 />
               </div>
             </div>
-            <div
+            {/* <div
               data-aos="fade-up"
               data-aos-duration="1000"
               className="row mtt-5 d-flex justify-content-center"
@@ -91,7 +88,7 @@ const Profile = () => {
               <div className="col-12 col-md-6 d-flex justify-content-center mt-res">
                 <EventCard2 />
               </div>
-            </div>
+            </div> */}
             {/* <div className="row">
               <div className="col-12 col-md-3 d-flex justify-content-center">
                 <EventCard name="Reverse Coding" events="ge" />
