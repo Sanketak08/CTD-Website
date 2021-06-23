@@ -10,7 +10,13 @@ import { HashLink } from "react-router-hash-link";
 const NavigationBar = () => {
   if (isLogin()) {
     return (
-      <Navbar className="nav-bar" collapseOnSelect expand="xl">
+      <Navbar
+        className="nav-bar"
+        collapseOnSelect
+        expand="xl"
+        variant="dark"
+        sticky
+      >
         <Navbar.Brand>
           <Link to="/">
             <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
@@ -47,7 +53,13 @@ const NavigationBar = () => {
   }
 
   return (
-    <Navbar className="nav-bar" collapseOnSelect expand="xl">
+    <Navbar
+      className="nav-bar"
+      collapseOnSelect
+      expand="xl"
+      variant="dark"
+      sticky="top"
+    >
       <Navbar.Brand>
         <Link to="/">
           <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
@@ -73,7 +85,9 @@ const NavigationBar = () => {
           </Link>
         </Nav>
         <Link className="na-link login" to="/login">
-          <Button size="lg" variant="link">Login</Button>
+          <Button size="lg" variant="link">
+            Login
+          </Button>
         </Link>
       </Navbar.Collapse>
     </Navbar>
