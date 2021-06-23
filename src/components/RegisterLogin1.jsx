@@ -6,7 +6,6 @@ import axios from "axios";
 import { login } from "./utils";
 import "../assets/css/carouselAnimation.css";
 import { Dropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const RegisterLogin1 = () => {
   //   const loginBtn = document.getElementById('login');

@@ -79,7 +79,7 @@ class TextScramble extends React.Component {
     next();
     window.addEventListener("scroll", (e) => {
       e.preventDefault();
-      if (window.scrollY > 890 && flag) {
+      if (window.scrollY > 300 && flag) {
         next();
         flag = false;
       }

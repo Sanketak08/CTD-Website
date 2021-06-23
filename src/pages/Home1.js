@@ -13,6 +13,9 @@ class Home1 extends React.Component {
   constructor() {
     super();
     this.vantaRef = React.createRef();
+    this.vantaRefIEEE = React.createRef();
+    this.vantaRefPISB = React.createRef();
+    this.vantaRefPING = React.createRef();
   }
   componentDidMount() {
     this.vantaEffect = WAVES({
@@ -142,7 +145,10 @@ class Home1 extends React.Component {
                       className="d-flex justify-content-center align-items-center"
                       style={{ height: "100%" }}
                     >
-                      <div className="carousel-text gradient-border" id="PISB">
+                      <div
+                        className="carousel-text gradient-border d-flex justify-content-center"
+                        id="PISB"
+                      >
                         <Row className="row-inner">
                           <Col className="d-flex align-items-center col-inner">
                             <div className="carousel-text-inner">
