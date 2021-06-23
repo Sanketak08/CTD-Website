@@ -5,8 +5,8 @@ import "../assets/css/homeAndAbout.css";
 import "../assets/css/carouselAnimation.css";
 import ctdlogo from "../assets/img/ctd.png";
 import TextScramble from "../components/TextScramble";
-import Navbar from './Navbar/NavigationBar'
-import Footer from './Footer/Footer'
+import Navbar from "./Navbar/NavigationBar";
+import Footer from "./Footer/Footer";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 
 class Home1 extends React.Component {
@@ -35,33 +35,36 @@ class Home1 extends React.Component {
   render() {
     return (
       <div className="home-page">
-        
         <div ref={this.vantaRef}>
           <Navbar></Navbar>
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
             className="section-home d-flex justify-content-center align-items-center ctd-image"
-        
           >
             <img src={ctdlogo} alt="ctd-logo" />
           </div>
-          
+
           {/* <HeadingAnimation3 /> */}
-          
         </div>
         {/* SECTION-ABOUTUS */}
         <div className="section-about" id="section-aboutCTD">
           <Container className="container-lower">
             <Row className="" data-aos="fade-up" data-aos-duration="1000">
               {/* <HeadingAnimation /> */}
-              <Row className="d-flex justify-content-start">
+              <Row
+                className="d-flex justify-content-start no-gutters"
+                id="CTD-heading"
+              >
                 {/* <h1>Credenz Tech Days</h1> */}
                 <div className="heading-wrapper">
                   <TextScramble text={"Credenz Tech Dayz"} />
                 </div>
               </Row>
-              <Row className="d-flex justify-content-center mt-5">
+              <Row
+                className="d-flex justify-content-center mt-5"
+                style={{ margin: "auto" }}
+              >
                 <p
                   className="lead text-justify p-2 about-content"
                   style={{ fontWeight: 400, width: "85%" }}
