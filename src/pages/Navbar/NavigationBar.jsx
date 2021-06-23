@@ -54,7 +54,9 @@ const NavigationBar = () => {
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">My name</Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="/my-profile">My Profile</Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/my-profile">My Profile</Link>
+                  </Dropdown.Item>
                   <Dropdown.Item href="#">Logout</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

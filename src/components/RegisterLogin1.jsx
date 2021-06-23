@@ -5,6 +5,8 @@ import axiosInstance from "../axios";
 import axios from "axios";
 import { login } from "./utils";
 import "../assets/css/carouselAnimation.css";
+import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const RegisterLogin1 = () => {
   //   const loginBtn = document.getElementById('login');
@@ -201,12 +203,17 @@ const RegisterLogin1 = () => {
                 placeholder="MIS ID (C2K1234567)"
                 onChange={handleProfileChange}
               />
-              <input
-                type="text"
-                className="input m-2"
-                name=""
-                placeholder="Category (Junior or Senior)"
-              />
+              <Dropdown
+                className="categoryDrop"
+                name="senior"
+                onSelect={handleProfileChange}
+              >
+                <Dropdown.Toggle id="dropdown-basic">Category</Dropdown.Toggle>
+                <Dropdown.Menu className="categoryMenu">
+                  <Dropdown.Item eventKey="senior">Senior</Dropdown.Item>
+                  <Dropdown.Item eventKey="junior">Junior</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               <input
                 type="password"
                 name="password"
