@@ -50,7 +50,7 @@ const NavigationBar = () => {
             <Link className="na-link" to="ContactUs">
               Contact
             </Link>
-            <Link className="na-link" to="my-profile">
+            <Link className="na-link">
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">My name</Dropdown.Toggle>
                 <Dropdown.Menu>
