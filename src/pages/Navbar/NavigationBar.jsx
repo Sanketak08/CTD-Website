@@ -6,12 +6,25 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import { isLogin } from "../../components/utils/index";
 import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
 
 const NavigationBar = () => {
+  const [active, setActive] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   if (isLogin()) {
     return (
       <Navbar
-        className="nav-bar"
+        className={active ? "changebg nav-bar" : "nav-bar"}
         collapseOnSelect
         expand="xl"
         variant="dark"
@@ -54,7 +67,7 @@ const NavigationBar = () => {
 
   return (
     <Navbar
-      className="nav-bar"
+      className={active ? "changebg nav-bar" : "nav-bar"}
       collapseOnSelect
       expand="xl"
       variant="dark"
