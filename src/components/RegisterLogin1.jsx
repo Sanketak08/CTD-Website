@@ -5,10 +5,12 @@ import axiosInstance from "../axios";
 import axios from "axios";
 import { login } from "./utils";
 import "../assets/css/carouselAnimation.css";
-import { Dropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
 
 const RegisterLogin1 = () => {
+  const options = ["Senior", "Junior"];
+  const defaultOption = options[0];
   //   const loginBtn = document.getElementById('login');
   //   const signupBtn = document.getElementById('signup');
   const history = useHistory();
@@ -24,7 +26,7 @@ const RegisterLogin1 = () => {
     reg_no: "",
     country_code: "+91",
     phone_no: "",
-    senior: false,
+    senior: "Senior",
     email: "",
   });
 
@@ -204,16 +206,14 @@ const RegisterLogin1 = () => {
                 onChange={handleProfileChange}
               />
               <Dropdown
-                className="categoryDrop"
+                className="dropdown-input"
+                options={options}
                 name="senior"
-                onSelect={handleProfileChange}
-              >
-                <Dropdown.Toggle id="dropdown-basic">Category</Dropdown.Toggle>
-                <Dropdown.Menu className="categoryMenu">
-                  <Dropdown.Item eventKey="senior">Senior</Dropdown.Item>
-                  <Dropdown.Item eventKey="junior">Junior</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+                id="senior"
+                onChange={handleProfileChange}
+                value={defaultOption}
+                placeholder="Category"
+              />
               <input
                 type="password"
                 name="password"

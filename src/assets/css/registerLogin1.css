@@ -273,29 +273,14 @@
   -webkit-transition: all 0.3s ease;
 }
 
-.categoryDrop button {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid rgba(69, 162, 157, 0.479) !important;
-  color: #45a29e;
-  font-size: 18px;
-  text-align: start;
-}
-
-.categoryDrop button:hover,
-.categoryDrop button:active,
-.categoryDrop button:focus,
-.categoryDrop button:visited {
-  background: transparent !important;
+.Dropdown-control {
+  background-color: #212730 !important;
   color: #45a29e !important;
   border: 0 !important;
   border-bottom: 1px solid rgba(69, 162, 157, 0.479) !important;
-  outline: none !important;
-}
-
-.categoryMenu {
-  width: 100%;
+  font-size: 18px;
+  padding: 8px 52px 8px 20px;
+  margin-left: 5px;
 }
 
 @media (max-width: 768px) {
