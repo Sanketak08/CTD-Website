@@ -68,6 +68,9 @@ class Home1 extends React.Component {
                 className="d-flex justify-content-center mt-5"
                 style={{ margin: "auto" }}
               >
+                <div className="display-4 my-5" style={{ color: "#fff" }}>
+                  About Us
+                </div>
                 <p
                   className="lead text-justify p-2 about-content"
                   style={{ fontWeight: 400, width: "85%" }}
