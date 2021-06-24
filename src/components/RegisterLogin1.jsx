@@ -26,7 +26,8 @@ const RegisterLogin1 = () => {
     reg_no: "",
     country_code: "+91",
     phone_no: "",
-    senior: "Senior",
+    seniorstr: "",
+    senior: null,
     email: "",
   });
 
@@ -58,6 +59,25 @@ const RegisterLogin1 = () => {
     });
   };
 
+  const handleCategory = (e) => {
+    updateProfileFormData({
+      ...profileFormData,
+      seniorstr: e.value.trim(),
+    });
+    if (e.value === "Senior") {
+      updateProfileFormData({
+        ...profileFormData,
+        senior: true,
+      });
+    } else {
+      updateProfileFormData({
+        ...profileFormData,
+        senior: false,
+      });
+    }
+    console.log(profileFormData);
+  };
+
   const handleRegisterChange = (e) => {
     updateRegisterFormData({
       ...registerFormData,
@@ -80,11 +100,12 @@ const RegisterLogin1 = () => {
 
   const handleRegisterSubmit = (e) => {
     e.preventDefault();
-    console.log(registerFormData);
     console.log(profileFormData);
 
-    axios
-      .post("http://127.0.0.1:8000/register/", {
+    console.log(profileFormData);
+
+    axiosInstance
+      .post("/register/", {
         username: registerFormData.username,
         password: registerFormData.password,
         first_name: registerFormData.first_name,
@@ -126,7 +147,7 @@ const RegisterLogin1 = () => {
       .then((res) => {
         login(res);
         axiosInstance.defaults.headers["Authorization"] =
-          "Bearer " + localStorage.getItem("access_token");
+          "JWT " + localStorage.getItem("access_token");
         history.push("/");
         console.log(res.status);
       })
@@ -159,7 +180,8 @@ const RegisterLogin1 = () => {
             ref={signupBtn}
             onClick={(e) => signupButton(e)}
           >
-            <span>or</span>Sign up
+            {/* <span>or</span> */}
+            Sign up
           </h2>
           <div className="d-flex justify-content-center align-items-center colDir">
             <div className="form-holder">
@@ -208,9 +230,9 @@ const RegisterLogin1 = () => {
               <Dropdown
                 className="dropdown-input"
                 options={options}
-                name="senior"
-                id="senior"
-                onChange={handleProfileChange}
+                name="seniorstr"
+                id="seniorstr"
+                onChange={handleCategory}
                 value={defaultOption}
                 placeholder="Category"
               />
