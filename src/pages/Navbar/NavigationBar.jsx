@@ -108,11 +108,13 @@ const NavigationBar = () => {
             Contact
           </Link>
         </Nav>
-        <Link exact className="na-link login" to="/login">
-          <Button size="lg" variant="link">
-            Login
-          </Button>
-        </Link>
+        <Nav className="margin-auto">
+          <Link exact className="na-link login" to="/login">
+            <Button size="lg" variant="link">
+              Login
+            </Button>
+          </Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );

@@ -1,6 +1,6 @@
-.events {
+/* .events {
   overflow-x: hidden;
-}
+} */
 
 .container1 {
   position: relative;
@@ -177,9 +177,9 @@
   /* background-color: rgb(41, 161, 156); */
   background-color: #15191e;
   color: white;
-  /* margin: 4% 0; */
+  margin-bottom: 40%;
   border-radius: 4px;
-  transition: 0.4s;
+  transition: all 0.2s;
 }
 
 .details-modal .tabs .active {
@@ -193,7 +193,6 @@
 .details-modal .tabs .tab:focus {
   background-color: rgb(41, 161, 156) !important;
   color: white;
-  /* margin: 4% 0; */
 }
 
 .details-modal img {
@@ -203,6 +202,7 @@
 .details-modal .tab-content {
   padding: 0 3% 2.5% 0;
   text-align: justify;
+  background-color: #212730 !important;
 }
 
 /* .container-upper-Events {

@@ -21,7 +21,7 @@ const Events = () => {
   };
 
   return (
-    <div className="body-ContactUs events">
+    <div className="container-fluid body-ContactUs events">
       {/* <Container>
         <Row className="mb-5 d-flex justify-content-start no-gutters">
           <p
