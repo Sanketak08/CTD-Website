@@ -73,7 +73,9 @@ const NavigationBar = () => {
 
   return (
     <Navbar
-      className={visible ? "active nav-bar sticky-top" : "nav-bar sticky-top"}
+      className={
+        visible ? "active-nav nav-bar sticky-top" : "nav-bar sticky-top"
+      }
       collapseOnSelect
       expand="xl"
     >
