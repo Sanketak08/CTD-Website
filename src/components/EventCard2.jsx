@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "../assets/css/eventcard.css";
 import ProfileModal from "./ProfileModal";
 
-const EventCard2 = () => {
+const EventCard2 = (props) => {
   //   const handleView = (e) => {
   //     alert(e);
   //   };
@@ -18,6 +18,7 @@ const EventCard2 = () => {
           />
         </div>
         <div className="contentBx">
+          <h3>{props.eventname}</h3>
           <div className="mt-3 mb-4">
             <Button
               className="details-btn-profile"
