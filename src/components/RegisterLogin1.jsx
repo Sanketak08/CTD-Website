@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
 import "../assets/css/registerLogin1.css";
 import axiosInstance from "../axios";
-import axios from "axios";
 import { login } from "./utils";
 import "../assets/css/carouselAnimation.css";
 import Dropdown from "react-dropdown";

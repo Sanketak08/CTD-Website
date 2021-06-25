@@ -23,6 +23,7 @@ const ScramblingText = ({ scrambleText, mainContainer }) => {
     );
     //     console.log(document.querySelector(`.${mainContainer}`));
     observer.observe(document.querySelector(`.${mainContainer}`));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return <div className="display-3 text-scramble">{text}</div>;
 };

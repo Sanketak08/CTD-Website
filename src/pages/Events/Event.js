@@ -9,6 +9,7 @@ const Event = (props) => {
   const history = useHistory();
   const [modalShow, setModalShow] = useState(false);
 
+  // eslint-disable-next-line no-unused-vars
   const handleNTH = () => {
     window.location.href = "www.nth.pictieee.in";
   };
