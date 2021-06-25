@@ -45,9 +45,8 @@ const Event = (props) => {
               className="event-img-border"
             />
           </div>
-          <div className="contentBx">
-            <h3>{props.name}</h3>
-
+          <div className="my-3 contentBx">
+            <h3>{props.eventname}</h3>
             <Button
               className="mt-3 mb-3 pl-4 pr-4 details-btn"
               onClick={() => setModalShow(true)}
@@ -86,7 +85,7 @@ const Event = (props) => {
           />
         </div>
         <div className="contentBx">
-          <h3>{props.name}</h3>
+          <h3>{props.eventname}</h3>
 
           <Button
             className="mt-3 mb-3 pl-4 pr-4 details-btn"

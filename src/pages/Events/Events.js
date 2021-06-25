@@ -8,6 +8,7 @@ import NTH from "./icons/nth-logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../assets/css/scrambleText.css";
 import "../../styles.css";
+import ScramblingText from "../../components/ScramblingText";
 
 const Events = () => {
   const nccBasicInfo =
@@ -32,14 +33,24 @@ const Events = () => {
         </Row>
       </Container> */}
       {/* <div className='heading-aboutUs display-3 mb-5 text-center'>Events</div> */}
-
+      <Row className="ml-5 mb-5 d-flex justify-content-start">
+        <p
+          className="h1 heading-wrapper"
+          style={{ color: "#fff", fontWeight: 500 }}
+        >
+          <ScramblingText
+            scrambleText={"Events"}
+            mainContainer={"heading-wrapper"}
+          />
+        </p>
+      </Row>
       <Row className="no-gutters">
         <Col lg={3} md={6} sm={12}>
           <Event
             info={nccBasicInfo}
             icon={RC}
             eventname="Reverse Coding"
-            id="1"
+            id={1}
           />
         </Col>
         <Col lg={3} md={6} sm={12}>
@@ -47,19 +58,24 @@ const Events = () => {
             info={nccBasicInfo}
             icon={NCC}
             eventname="National Coding Contest"
-            id="2"
+            id={2}
           />
         </Col>
         <Col lg={3} md={6} sm={12}>
           <Event
             info={nthBasicInfo}
             icon={Inquizitive}
-            eventname="Inquizitive"
-            id="4"
+            eventname="InQUIZitive"
+            id={4}
           />
         </Col>
         <Col lg={3} md={6} sm={12}>
-          <Event id={3} info={nccBasicInfo} icon={NTH} eventname="NTH" />
+          <Event
+            id={3}
+            info={nccBasicInfo}
+            icon={NTH}
+            eventname="Network Treasure Hunt"
+          />
         </Col>
       </Row>
     </div>

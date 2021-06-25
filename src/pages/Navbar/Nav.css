@@ -3,15 +3,16 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px !important;
 }
+
 .nav-selected {
-  background: linear-gradient(
-    to top,
-    rgb(248, 248, 248) 50%,
-    transparent 50%
-  ) !important;
-  background-size: 100% 200% !important;
-  background-position: bottom left !important;
-  color: black !important;
+  font-weight: bold;
+  color: #45a29e !important;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #45a29e;
+}
+
+.active {
+  background-color: #15191e !important;
 }
 
 .nav-bar button {
@@ -35,8 +36,7 @@
 }
 
 .nav-bar .m-auto a:hover {
-  color: rgb(26, 26, 26) !important;
-  background-position: bottom left;
+  color: #45a29e !important;
 }
 
 .login button {

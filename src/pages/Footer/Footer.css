@@ -101,6 +101,9 @@
   .footer-text {
     font-size: 18px;
   }
+  .footer-res {
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .footer-text {

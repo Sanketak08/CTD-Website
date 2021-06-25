@@ -7,9 +7,21 @@ import "./Nav.css";
 import { isLogin, logout } from "../../components/utils/index";
 import { HashLink } from "react-router-hash-link";
 import { useHistory } from "react-router-dom";
+import { useState } from "react";
 
 const NavigationBar = () => {
   const history = useHistory();
+  const [visible, setVisible] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY < 80) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   const handleLogout = () => {
     logout();
@@ -19,7 +31,11 @@ const NavigationBar = () => {
 
   if (isLogin()) {
     return (
-      <Navbar className="nav-bar" collapseOnSelect expand="xl">
+      <Navbar
+        className={visible ? "active nav-bar sticky-top" : "nav-bar sticky-top"}
+        collapseOnSelect
+        expand="xl"
+      >
         <Navbar.Brand>
           <Link to="/">
             <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
@@ -54,7 +70,11 @@ const NavigationBar = () => {
   }
 
   return (
-    <Navbar className="nav-bar" collapseOnSelect expand="xl">
+    <Navbar
+      className={visible ? "active nav-bar sticky-top" : "nav-bar sticky-top"}
+      collapseOnSelect
+      expand="xl"
+    >
       <Navbar.Brand>
         <Link to="/">
           <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
