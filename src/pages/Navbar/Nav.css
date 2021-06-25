@@ -3,31 +3,28 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px !important;
 }
+.nav-selected {
+  background: linear-gradient(
+    to top,
+    rgb(248, 248, 248) 50%,
+    transparent 50%
+  ) !important;
+  background-size: 100% 200% !important;
+  background-position: bottom left !important;
+  color: black !important;
+}
 
-.changebg {
-  background-color: #15191e !important;
+.nav-bar button {
+  background-color: white;
 }
 
 .nav-bar .m-auto a {
   text-decoration: none;
-  color: white !important;
+  color: white;
   padding: 0.5% 3% !important;
-  margin: 0.25% 6% !important;
+  margin: 1% 6% !important;
   font-size: 170% !important;
   position: relative;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav-bar .login button {
-    margin: 1% 5%;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .nav-bar .m-auto a {
-    padding: 2% 0% !important;
-    margin: 2% 0%;
-  }
 }
 
 .nav-bar .m-auto a {
@@ -55,4 +52,27 @@ button:active {
   text-decoration: none;
   color: white;
   border: 2px solid #326d6a;
+}
+
+.btn-primary {
+  background-color: #45a29e !important;
+  border-color: #45a29e !important;
+  padding: 7.5px 15px !important;
+  font-size: 1.25rem !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar .login button {
+    margin: 1% 5%;
+  }
+  .btn-primary {
+    margin: 1% 5%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-bar .m-auto a {
+    padding: 2% 0% !important;
+    margin: 2% 0%;
+  }
 }

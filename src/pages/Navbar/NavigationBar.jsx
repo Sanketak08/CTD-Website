@@ -2,34 +2,24 @@
 import React from "react";
 import { Navbar, Nav, Button, Dropdown } from "react-bootstrap";
 import CTDlogo from "../../assets/img/ctd.png";
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import "./Nav.css";
-import { isLogin } from "../../components/utils/index";
+import { isLogin, logout } from "../../components/utils/index";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const NavigationBar = () => {
-  const [active, setActive] = useState(false);
+  const history = useHistory();
 
-  const changeBackground = () => {
-    if (window.scrollY >= 100) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
+  const handleLogout = () => {
+    logout();
+    history.push("/");
+    window.location.reload();
   };
-
-  window.addEventListener("scroll", changeBackground);
 
   if (isLogin()) {
     return (
-      <Navbar
-        className={active ? "changebg nav-bar" : "nav-bar"}
-        collapseOnSelect
-        expand="xl"
-        variant="dark"
-        sticky
-      >
+      <Navbar className="nav-bar" collapseOnSelect expand="xl">
         <Navbar.Brand>
           <Link to="/">
             <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
@@ -38,7 +28,7 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto">
-            <Link className="na-link" to="/">
+            <Link className="na-link" activeClassName="nav-selected" to="/">
               Home
             </Link>
             <HashLink className="na-link" to="/About/#section-aboutCTD">
@@ -50,31 +40,21 @@ const NavigationBar = () => {
             <Link className="na-link" to="ContactUs">
               Contact
             </Link>
-            <Link className="na-link">
-              <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">My name</Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item>
-                    <Link to="/my-profile">My Profile</Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#">Logout</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Link>
           </Nav>
+          <Dropdown className="na-dropdown">
+            <Dropdown.Toggle id="dropdown-basic">My Profile</Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="/my-profile">My Profile</Dropdown.Item>
+              <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Navbar.Collapse>
       </Navbar>
     );
   }
 
   return (
-    <Navbar
-      className={active ? "changebg nav-bar" : "nav-bar"}
-      collapseOnSelect
-      expand="xl"
-      variant="dark"
-      sticky="top"
-    >
+    <Navbar className="nav-bar" collapseOnSelect expand="xl">
       <Navbar.Brand>
         <Link to="/">
           <img alt="CTDLOGO" src={CTDlogo} className="logo" width="100px" />
@@ -83,23 +63,30 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto">
-          <Link className="na-link" to="/">
+          <Link exact className="na-link" to="/" activeClassName="nav-selected">
             Home
           </Link>
-          <HashLink className="na-link" to="/About/#section-aboutCTD">
+          <HashLink exacr className="na-link" to="/About/#section-aboutCTD">
             About
           </HashLink>
-          <Link className="na-link" to="/events">
+          <Link
+            exact
+            className="na-link"
+            to="/events"
+            activeClassName="nav-selected"
+          >
             Events
           </Link>
-          <Link className="na-link" to="/ContactUs">
+          <Link
+            exact
+            className="na-link"
+            to="/ContactUs"
+            activeClassName="nav-selected"
+          >
             Contact
           </Link>
-          <Link className="na-link" to="/my-profile">
-            Profile
-          </Link>
         </Nav>
-        <Link className="na-link login" to="/login">
+        <Link exact className="na-link login" to="/login">
           <Button size="lg" variant="link">
             Login
           </Button>

@@ -4,23 +4,26 @@ import "../assets/css/profile.css";
 import PersonalDetails from "../components/PersonalDetails";
 import axiosInstance from "../axios";
 import EventCard2 from "../components/EventCard2";
-import TextScramble from "../components/TextScramble";
+import InquizitiveIcon from "../pages/Events/icons/inquizitive.png";
+import NCCIcon from "../pages/Events/icons/NCC.png";
+import RCIcon from "../pages/Events/icons/RC.png";
+import ScramblingText from "../components/ScramblingText";
 const Profile = () => {
   const [appState, setAppState] = useState({
     loading: true,
     profile: null,
   });
 
-  //   useEffect(() => {
-  //     axiosInstance.get("account_detail/").then((res) => {
-  //       const profileData = res.data;
-  //       console.log(res.data);
-  //       setAppState({ loading: false, profile: profileData });
-  //       console.log(res.data);
-  //     });
-  //   }, [setAppState]);
+  useEffect(() => {
+    axiosInstance.get("account_detail/").then((res) => {
+      const profileData = res.data;
+      console.log(res.data);
+      setAppState({ loading: false, profile: profileData });
+      console.log(res.data);
+    });
+  }, [setAppState]);
 
-  //   if (appState.loading) return <p>Loading Profile Data</p>;
+  if (appState.loading) return <p>Loading Profile Data</p>;
   return (
     <div className="pr-container body-ContactUs">
       <div className="container">
@@ -31,30 +34,39 @@ const Profile = () => {
         >
           <div className="d-flex justify-content-center align-items-center">
             <div
-              className="mt-4 h1 heading-res"
+              className="mt-4 h1 heading-res heading-wrapper"
               style={{ fontWeight: "300", lineHeight: "1.2" }}
             >
-              <TextScramble text="My Profile" />
+              <ScramblingText
+                scrambleText={"Profile"}
+                mainContainer={"heading-wrapper"}
+              />
             </div>
           </div>
           <div className="row mt-5">
             {/* Name and Initials */}
             <div className="col-12 col-md-6 nameContainer d-flex justify-content-center align-items-center">
               <div className="circle">
-                <p className="initials">JD</p>
+                <p className="initials">{appState.profile.name.substr(0, 1)}</p>
               </div>
-              <div className="mt-4 name h2">John Doe</div>
+              <div className="mt-4 name h2">{appState.profile.name}</div>
             </div>
             {/* Personal Details */}
 
             <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
               <div className="rowDir">
                 <PersonalDetails
-                  name="johndoe@gmail.com"
+                  name={appState.profile.email}
                   icon="fa fa-envelope"
                 />
-                <PersonalDetails name="Senior" icon="fa fa-cubes" />
-                <PersonalDetails name="9867543678" icon="fa fa-phone" />
+                <PersonalDetails
+                  name={appState.profile.level}
+                  icon="fa fa-cubes"
+                />
+                <PersonalDetails
+                  name={appState.profile.phone_no}
+                  icon="fa fa-phone"
+                />
               </div>
             </div>
           </div>
@@ -73,9 +85,20 @@ const Profile = () => {
           </div>
           <div className="mt-5">
             <div data-aos="fade-up" data-aos-duration="1000" className="row">
-              <div className="col-12 col-md-4 d-flex justify-content-center mt-res">
-                <EventCard2 />
-              </div>
+              {Object.keys(appState.profile.events).map((key, index) => (
+                <div className="col-12 col-md-4 d-flex justify-content-center mt-res ">
+                  <EventCard2
+                    eventCode={appState.profile.events[key.toString()]}
+                    icon={
+                      key.toString() === "NCC"
+                        ? NCCIcon
+                        : key.toString() === "RC"
+                        ? RCIcon
+                        : InquizitiveIcon
+                    }
+                  />
+                </div>
+              ))}
             </div>
             {/* <div
               data-aos="fade-up"
