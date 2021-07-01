@@ -8,6 +8,7 @@ import { isLogin } from "../../components/utils/index";
 const Event = (props) => {
   const history = useHistory();
   const [modalShow, setModalShow] = useState(false);
+  const [hover, setHover] = useState("");
 
   // eslint-disable-next-line no-unused-vars
   const handleNTH = () => {
@@ -36,8 +37,16 @@ const Event = (props) => {
 
   if (props.id === 3) {
     return (
-      <div className="container1  d-flex justify-content-center mt-res">
-        <div className="card1">
+      <div
+        className="container1  d-flex justify-content-center mt-res"
+        onMouseEnter={() => {
+          setHover("hover");
+        }}
+        onMouseLeave={() => {
+          setHover("");
+        }}
+      >
+        <div className={`card1 ${hover}`}>
           <div className="imgBx">
             <img
               alt={props.eventname}
@@ -58,7 +67,11 @@ const Event = (props) => {
               eventname={props.eventname}
               logo={props.icon}
               show={modalShow}
-              onHide={() => setModalShow(false)}
+              info={props.info}
+              onHide={() => {
+                setModalShow(false);
+                setHover("");
+              }}
             />
             <div>
               <Button
@@ -75,8 +88,16 @@ const Event = (props) => {
   }
 
   return (
-    <div className="container1  d-flex justify-content-center mt-res">
-      <div className="card1">
+    <div className={`container1  d-flex justify-content-center mt-res `}>
+      <div
+        className={`card1 ${hover}`}
+        onMouseEnter={() => {
+          setHover("hover");
+        }}
+        onMouseLeave={() => {
+          setHover("");
+        }}
+      >
         <div className="imgBx">
           <img
             alt={props.eventname}
@@ -87,19 +108,26 @@ const Event = (props) => {
         <div className="contentBx">
           <h3>{props.eventname}</h3>
 
-          <Button
-            className="mt-3 mb-3 pl-4 pr-4 details-btn"
-            onClick={() => setModalShow(true)}
-            variant="outline-light"
-          >
-            Details
-          </Button>
           <DetailsModal
             eventname={props.eventname}
             logo={props.icon}
             show={modalShow}
-            onHide={() => setModalShow(false)}
+            info={props.info}
+            onHide={() => {
+              setModalShow(false);
+              setHover("");
+            }}
           />
+          <Button
+            className="mt-3 mb-3 pl-4 pr-4 details-btn"
+            onClick={() => {
+              setModalShow(true);
+            }}
+            variant="outline-light"
+          >
+            Details
+          </Button>
+
           <div>
             <Button className="register-btn" onClick={handleSubmit}>
               Register
